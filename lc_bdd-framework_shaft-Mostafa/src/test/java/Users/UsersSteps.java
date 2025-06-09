@@ -1,6 +1,5 @@
-package SkipCourse;
+package Users;
 
-import help.DatabaseQueries;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 
@@ -20,7 +19,7 @@ public class UsersSteps {
     Homepage homePage=new Homepage();
     AddNewUserPopUp AddNewUserPopUpObj =new AddNewUserPopUp();
     UsersDetailsPage UsersDetailsPageObj=new UsersDetailsPage();
-    DatabaseQueries databaseObject=new DatabaseQueries();
+
 
     @And("Assign the trainees")
     public void assignTheTrainees() {
@@ -73,7 +72,7 @@ public class UsersSteps {
 
     @Then("Check that new user is added successfully")
     public void checkThatNewUserIsAddedSuccessfully() {
-        Assert.assertEquals(UsersDetailsPageObj.CheckUserName(),Name);
+        Assert.assertEquals(UsersDetailsPageObj.CheckUserAdded(),"تم إضافة المستخدم بنجاح");
 
 
     }
@@ -118,4 +117,13 @@ public class UsersSteps {
         UsersDetailsPageObj.ResetPasswordButton();
 
     }
+
+    @Then("Check that Password is updated successfully")
+    public void checkThatPasswordIsUpdatedSuccessfully() {
+        Assert.assertEquals(UsersDetailsPageObj.CheckResetPassword(),"تم إعادة ضبط كلمة المرور بنجاح");
+
+
+    }
+
+
 }

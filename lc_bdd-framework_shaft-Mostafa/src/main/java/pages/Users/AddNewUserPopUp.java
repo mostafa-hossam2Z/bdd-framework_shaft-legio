@@ -27,7 +27,6 @@ public class AddNewUserPopUp extends base {
 
     public void ClickOnAddNewUser(){
         driver.element().click(ClickOnAddNewUserButton);
-        Name = faker.name().firstName();
     }
     public void EnterNameOfTheUser(){
         Name = faker.name().firstName();
