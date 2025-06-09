@@ -11,7 +11,6 @@ Feature: Departments feature
     And click on  the save button
     Then Check that new department is added successfully
 
-
     Examples:
       | Email                 | Password |
       | Admin1Email_Staging   |Password  |
