@@ -41,7 +41,7 @@ public class RulesSteps {
 
     @Then("Check that new rule is added successfully")
     public void checkThatNewRuleIsAddedSuccessfully() {
-        Assert.assertEquals(RulesDetailsPageObj.CheckAddedNewRule(),"تم اضافة  دور");
+        Assert.assertEquals(RulesDetailsPageObj.CheckAddedNewRule(),"تم اضافة دور");
 
     }
 

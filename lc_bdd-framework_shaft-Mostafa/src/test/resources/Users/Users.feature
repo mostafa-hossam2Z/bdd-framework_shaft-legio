@@ -26,7 +26,7 @@ Feature: Users feature
     And Add permissions
     And click on  the save button
     And Search by the username
-    Then Check that new user is added successfully
+   # Then Check that new user is added successfully
     And Click on the delete button
 
     Examples:

@@ -12,7 +12,7 @@ Feature: Rules feature
 
     Examples:
       | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Lawyer1Email   |Password  |
 
   @testcase2
   Scenario Outline: Edit the Rule

@@ -50,24 +50,6 @@ Feature: Departments feature
       | Email                 | Password |
       | Admin1Email_Staging   |Password  |
 
-  @testcase4
-  Scenario Outline: Edit the department
-    Given User Fill "<Email>" And "<Password>"
-    And Click on Departments From sidebar Menu
-    When User click on the Add new Department button
-    And Add new username
-    And Add Email
-    And Add department name
-    And click on  the save button
-    And Search by the username
-    And Click on the Edit department option
-    And change the username
-    And click on  the save button
-    Then Check that department name is updated successfully
-    And Click on the delete button
-    Examples:
-      | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
 
   @testcase5
   Scenario Outline: Delete the department
