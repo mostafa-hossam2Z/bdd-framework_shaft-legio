@@ -1,4 +1,4 @@
-package pages.ProjectManagement;
+package pages.Case;
 
 import org.openqa.selenium.By;
 
@@ -54,7 +54,7 @@ public class AddNewCasePopUp {
 
     }
     public void EnterCaseNumber() {
-        CaseNumber = faker.number().digit();
+        CaseNumber = faker.number().digits(12);
         driver.element().type(CaseNumberTextField, CaseNumber);
 
     }
