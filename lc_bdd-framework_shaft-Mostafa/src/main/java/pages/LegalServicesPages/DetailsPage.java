@@ -1,4 +1,4 @@
-package pages.Case;
+package pages.LegalServicesPages;
 
 import org.openqa.selenium.By;
 
@@ -40,8 +40,6 @@ By CheckAddedModel=By.xpath("//div[contains(text(),'تم حفظ نموذج ال�
     }
     public String CheckTextFieldtext()
     {
-        try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
-
         return driver.element().getText(CheckTextName);
 
     }

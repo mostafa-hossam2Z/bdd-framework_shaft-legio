@@ -1,23 +1,24 @@
-package pages.Case;
+package pages.LegalServicesPages;
 
 import org.openqa.selenium.By;
 
-import static pages.CommonPages.base.driver;
 import static pages.Case.AddNewCasePopUp.AddressName;
 import static pages.Case.AddNewCasePopUp.CaseNumber;
+import static pages.CommonPages.base.driver;
+import static pages.LegalServicesPages.AddNewLegalServicePopUp.LegalServiceAddress;
 
-public class CaseDetailsPage {
-    By AddNewCase=By.xpath("//button[contains(text(),'قضية جديدة')]");
-    By CheckNewCase=By.xpath("//div[contains(text(),'تم اضافة القضية بنجاح')]");
+public class LegalServiceDetailsPage {
+    By AddNewLegalServiceBtn=By.xpath("//button[contains(text(),'خدمة قانونية جديدة')]");
+    By CheckAddedNewLegal=By.xpath("//div[contains(text(),'تم اضافة الخدمة القانونية بنجاح')]");
     By UpdateCase=By.xpath("//div[contains(text(),'تم تعديل القضية بنجاح')]");
     By EditCaseBtn=By.xpath("//tbody/tr[1]/td[7]/div[1]/button[2]/i[1]");
-    By DeleteCaseBtn=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/button[3]");
-    By ConfirmDeleteCase=By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[3]/button[2]");
-    By CheckDeletedCase=By.xpath("//div[contains(text(),'تم حذف القضية')]");
+    By DeleteLegalServiceBtn=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[5]/div[1]/button[2]");
+    By ConfirmDeleteLegalService=By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[3]/button[2]");
+    By CheckDeletedLegalServices=By.xpath("//div[contains(text(),'تم حذف الخدمة القانونية بنجاح')]");
     By CasesPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/a[1]/span[2]");
-    By SearchAddressName=By.xpath("//input[@id='filter-input-title']") ;
+    By SearchByLegalServiceAddress=By.xpath("//input[@id='filter-input-title']") ;
     By SearchCaseNumber=By.xpath("//input[@id='filter-input-number']");
-    By CaseDetailsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/button[1]/i[1]");
+    By LegalServicesDetailsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[5]/div[1]/button[1]/i[1]");
     By AddNewSession=By.xpath("//button[contains(text(),'جلسة جديدة')]");
     By SessionsBtn=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]");
     By ChatTabBtn=By.xpath("//a[contains(text(),'المحادثات')]");
@@ -35,50 +36,38 @@ public class CaseDetailsPage {
     By LegalPage=By.xpath("//span[contains(text(),'خدمات قانونية')]");
 
 
-    public void ClickOnAddNewCaseBtn()
-    {
-
-        driver.element().click(AddNewCase);
-    }
-    public void ClickOnCaseDetailsPage()
-    {
-        driver.element().click(CaseDetailsPage);
-    }
-    public String CheckAddedNewCase()
-    {
-        return driver.element().getText(CheckNewCase);
-    }
+    public void ClickOnAddNewLegalServiceBtn()
+    {driver.element().click(AddNewLegalServiceBtn);}
+    public void ClickOnLegalServicesDetailsPage()
+    {driver.element().click(LegalServicesDetailsPage);}
+    public String CheckAddedNewLegalServices() {return driver.element().getText(CheckAddedNewLegal);}
     public String CheckUpdatedCase() throws InterruptedException {
         Thread.sleep(3000);
         return driver.element().getText(UpdateCase);
     }
-    public String CheckThatCaseisDelted() throws InterruptedException {
-        Thread.sleep(3000);
-        return driver.element().getText(CheckDeletedCase);
+    public String CheckThatLegalServicesIsDeleted()  {
+        try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        return driver.element().getText(CheckDeletedLegalServices);
     }
 
-    public void ClickOnEditCaseBtn()
+    public void ClickOnEditLegalServiceBtn()
     {
        // driver.element().click(CasesPage);
         driver.element().click(EditCaseBtn);
     }
-    public void SearchByAddressAndCaseNumber()
+    public void SearchByLegalServiceAddress()
     {
-        driver.element().click(CasesPage);
-        driver.browser().refreshCurrentPage();
-        driver.element().type(SearchAddressName,AddressName);
-        driver.element().type(SearchCaseNumber,CaseNumber);
-
-        driver.browser().refreshCurrentPage();
+       // driver.browser().refreshCurrentPage();
+        driver.element().type(SearchByLegalServiceAddress,LegalServiceAddress);
+        //  driver.browser().refreshCurrentPage();
 
     }
-    public void ClickOnDeleteCaseBtn()
+    public void ClickOnDeleteLegalServiceBtn()
     {
         try {Thread.sleep(1700);} catch (InterruptedException e) {throw new RuntimeException(e);}
         driver.browser().refreshCurrentPage();
-        //driver.element().click(CasesPage);
-        driver.element().click(DeleteCaseBtn);
-        driver.element().click(ConfirmDeleteCase);
+        driver.element().click(DeleteLegalServiceBtn);
+        driver.element().click(ConfirmDeleteLegalService);
     }
     public void ClickOnAddNewSessionBtn() {
         driver.element().click(SessionsBtn);
@@ -96,6 +85,7 @@ public class CaseDetailsPage {
     public void ClickOnAddNewContactBtn() {driver.element().click(AddNewContactBtn);}
     public void ClickOnArchiveBtn() {driver.element().click(ArchiveBtn);}
     public void ClickOnUnArchiveBtn() {driver.element().click(UnArchiveBtn);}
+    public void ClickOnLegalPage() {driver.element().click(LegalPage);}
 
 
 

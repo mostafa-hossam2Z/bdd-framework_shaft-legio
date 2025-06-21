@@ -1,4 +1,4 @@
-package pages.Case;
+package pages.LegalServicesPages;
 
 import org.openqa.selenium.By;
 

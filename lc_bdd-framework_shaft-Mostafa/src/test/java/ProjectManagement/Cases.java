@@ -1,18 +1,19 @@
 package ProjectManagement;
 
+import com.shaft.driver.SHAFT;
 import com.shaft.gui.element.ElementActions;
+import com.shaft.validation.Validations;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import pages.Case.AddNewSessionPopUpPage;
-import pages.Case.DetailsPage;
+import pages.Case.*;
 import pages.CommonPages.Homepage;
-import pages.Case.AddNewCasePopUp;
-import pages.Case.CaseDetailsPage;
 
+import static pages.Case.ReportsPage.ReportAddress;
+import static pages.Case.TaskPopUpPage.TaskAddress;
 import static pages.CommonPages.base.driver;
 
 public class Cases {
@@ -24,6 +25,13 @@ public class Cases {
     AddNewCasePopUp AddNewCasePopUpObj=new AddNewCasePopUp();
     DetailsPage DetailsPageObj=new DetailsPage();
     AddNewSessionPopUpPage AddNewSessionPopUpPageObj=new AddNewSessionPopUpPage();
+    ChatPage ChatPageObj=new ChatPage();
+    AttachmentPage AttachmentPageObj=new AttachmentPage();
+    TaskPopUpPage TaskPopUpPageObj=new TaskPopUpPage();
+    ReportsPage ReportsPageObj =new ReportsPage();
+    AgenciesPage AgenciesPageObj=new AgenciesPage();
+    CommunicationLogsPage CommunicationLogsPageObj=new CommunicationLogsPage();
+    ArchivePage ArchivePageObj=new ArchivePage();
     @And("Click on Cases From sidebar Menu")
     public void clickOnCasesFromSidebarMenu() {
         homepage.ClickOnCasesPage();
@@ -226,11 +234,243 @@ public class Cases {
 
     @And("Enter the chat text")
     public void enterTheChatText() {
+        ChatPageObj.EnterChat();
     }
 
     @Then("check that message is sent successfully")
     public void checkThatMessageIsSentSuccessfully() {
+        Assert.assertEquals(ChatPageObj.CheckChatTextDetails(),"Welcome");
     }
+
+    @When("Click on the attachment button of the case")
+    public void clickOnTheAttachmentButtonOfTheCase() {
+        CaseDetailsPageObj.ClickOnAttachmentBtn();
+    }
+
+    @And("Upload the attachment")
+    public void uploadTheAttachment() {
+        AttachmentPageObj.UploadFileAttachment();
+    }
+
+    @Then("check that file is Uploaded successfully")
+    public void checkThatFileIsUploadedSuccessfully() {
+        Assert.assertEquals(AttachmentPageObj.CheckUploadedAttachment(),"Competencies Template (2).xlsx");
+    }
+
+    @And("Click on the delete attachment button")
+    public void clickOnTheDeleteAttachmentButton() {
+        AttachmentPageObj.ClickOnTheDeleteBtn();
+    }
+
+    @Then("check that file is deleted successfully")
+    public void checkThatFileIsDeletedSuccessfully() {
+        try {Thread.sleep(2000);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        Assert.assertEquals(AttachmentPageObj.CheckDeletedAttachment(),"لا يوجد مرفقات");
+
+    }
+
+    @When("Click on the tasks tab")
+    public void clickOnTheTasksTab() {
+        CaseDetailsPageObj.ClickOnTaskTabBtn();
+    }
+
+    @And("Click on the add new task button")
+    public void clickOnTheAddNewTaskButton() {
+        CaseDetailsPageObj.ClickOnAddTaskBtn();
+
+    }
+
+    @And("Fill the basic information of the tasks field")
+    public void fillTheBasicInformationOfTheTasksField() {
+        TaskPopUpPageObj.EnterTaskDataFields();
+
+    }
+
+    @Then("check that task is added successfully")
+    public void checkThatTaskIsAddedSuccessfully() {
+        Assert.assertEquals(TaskPopUpPageObj.CheckAddedTask(),TaskAddress);
+    }
+
+    @And("Click on the delete task button")
+    public void clickOnTheDeleteTaskButton() {
+        TaskPopUpPageObj.ClickOnTheDeletedTask();
+    }
+
+    @Then("check that task is deleted successfully")
+    public void checkThatTaskIsDeletedSuccessfully() {
+        Assert.assertEquals(TaskPopUpPageObj.CheckTheDeletedTask(),"لا يوجد مهام");
+
+    }
+
+    @When("Click on the report tab")
+    public void clickOnTheReportTab() {
+        CaseDetailsPageObj.ClickOnReportTabBtn();
+    }
+
+    @And("Click on the add new report button")
+    public void clickOnTheAddNewReportButton() {
+        CaseDetailsPageObj.ClickOnAddReportTabBtn();
+    }
+
+    @And("Fill the report address")
+    public void fillTheReportAddress() {
+        ReportsPageObj.EnterTheReportAddress();
+    }
+
+    @And("Add thr report details")
+    public void addThrReportDetails() {
+        ReportsPageObj.EnterTheReportDetails();
+    }
+
+    @And("click on the save add report button")
+    public void clickOnTheSaveAddReportButton() {
+        ReportsPageObj.ClickSaveReportBtn();
+    }
+
+    @Then("check that report is added successfully")
+    public void checkThatReportIsAddedSuccessfully() {
+        Assert.assertEquals(ReportsPageObj.CheckAddedReport(),ReportAddress);
+    }
+
+    @When("Click on the agency tab")
+    public void clickOnTheAgencyTab() {
+        CaseDetailsPageObj.ClickOnAgencyTabBtn();
+    }
+
+    @And("Click on the add new agency button")
+    public void clickOnTheAddNewAgencyButton() {
+        CaseDetailsPageObj.ClickOnAddNewAgencyBtn();
+    }
+
+    @And("Fill the Basic Data fields to add agency")
+    public void fillTheBasicDataFieldsToAddAgency() {
+        AgenciesPageObj.EnterAgencyDataFields();
+
+    }
+
+    @And("click on the save add agency button")
+    public void clickOnTheSaveAddAgencyButton() {
+        AgenciesPageObj.ClickOnTheSaveAddAgency();
+    }
+
+    @Then("check that agency is added successfully")
+    public void checkThatAgencyIsAddedSuccessfully() {
+        Assert.assertEquals(AgenciesPageObj.CheckAddedAgency(),"تم الاضافة بنجاح");
+    }
+
+    @And("Click on the edit agency btn")
+    public void clickOnTheEditAgencyBtn() {
+        AgenciesPageObj.ClickOnTheEditAgencyButton();
+
+    }
+
+    @And("Edit the agency")
+    public void editTheAgency() {
+        AgenciesPageObj.EditTheAddedAgency();
+
+    }
+
+    @Then("check that agency is updated successfully")
+    public void checkThatAgencyIsUpdatedSuccessfully() {
+       Assert.assertEquals(AgenciesPageObj.CheckTheUpdatedAgency(),"تم التعديل بنجاح");
+    }
+
+    @When("Click on the communication logs tab")
+    public void clickOnTheCommunicationLogsTab() {
+     CaseDetailsPageObj.ClickOnContactTabBtn();
+    }
+
+    @And("Click on the add new contact button")
+    public void clickOnTheAddNewContactButton() {
+        CaseDetailsPageObj.ClickOnAddNewContactBtn();
+
+    }
+
+    @And("Fill the Basic Data fields to add a new contact contact")
+    public void fillTheBasicDataFieldsToAddANewContactContact() {
+        CommunicationLogsPageObj.EnterDataOfAddNewContact();
+    }
+
+    @And("click on the save add contact button")
+    public void clickOnTheSaveAddContactButton() {
+        CommunicationLogsPageObj.ClickOnTheSaveAddNewContactBtn();
+    }
+
+    @Then("check that contact is added successfully")
+    public void checkThatContactIsAddedSuccessfully() {
+        Assert.assertEquals(CommunicationLogsPageObj.CheckAddedNewContact(),"تم إضافة السجل بنجاح");
+    }
+
+    @And("Click on the delete contact button")
+    public void clickOnTheDeleteContactButton() {
+        CommunicationLogsPageObj.ClickOnTheDeleteContactBtn();
+    }
+
+    @Then("check that contact is deleted successfully")
+    public void checkThatContactIsDeletedSuccessfully() {
+        Assert.assertEquals(CommunicationLogsPageObj.CheckDeletedNewContact(),"تم حذف السجل بنجاح");
+    }
+
+    @And("Click on the download contact button")
+    public void clickOnTheDownloadContactButton() {
+        CommunicationLogsPageObj.ClickOnThContactDownloadBtn();
+
+    }
+
+    @Then("Check that contact is downloaded successfully")
+    public void checkThatContactIsDownloadedSuccessfully() {
+
+        CommunicationLogsPageObj.CheckDownloadedFile();
+    }
+
+    @And("Click on the contact details button")
+    public void clickOnTheContactDetailsButton() {
+        CommunicationLogsPageObj.ClickOnThContactDetailsBtn();
+    }
+
+    @When("Click on the Archive button")
+    public void clickOnTheArchiveButton() {
+        CaseDetailsPageObj.ClickOnArchiveBtn();
+    }
+
+    @And("Add the Report title")
+    public void addTheReportTitle() {
+        ArchivePageObj.EnterTheReportTitle();
+    }
+
+    @And("Add the final report")
+    public void addTheFinalReport() {
+        ArchivePageObj.EnterTheFinalReport();
+    }
+
+    @And("Click on the Archiving completed button")
+    public void ClickOnTheArchivingCompletedButton() {
+        ArchivePageObj.ClickOnTheSaveArchivedBtn();
+    }
+
+    @Then("check that case is Archived successfully")
+    public void checkThatCaseIsArchiviedSuccessfully() {
+        Assert.assertEquals(ArchivePageObj.CheckThatCaseArchived(),"إعادة فتح القضية");
+    }
+
+    @And("Click on the UnArchiving completed button")
+    public void clickOnTheUnArchivingCompletedButton() {
+        CaseDetailsPageObj.ClickOnUnArchiveBtn();
+    }
+
+    @Then("check that case is UnArchived successfully")
+    public void checkThatCaseIsUnArchivedSuccessfully() {
+        Assert.assertEquals(ArchivePageObj.CheckThatCaseUnArchived(),"أرشفة القضية");
+
+    }
+
+    @And("Click on the UnArchive completed button")
+    public void clickOnTheUnArchiveCompletedButton() {
+        ArchivePageObj.ClickOnUnArchivedBtn();
+
+    }
+
+
 }
 
 
