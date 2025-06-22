@@ -92,7 +92,9 @@ public class CaseDetailsPage {
     public void ClickOnAddReportTabBtn() {driver.element().click(AddReportBtn);}
     public void ClickOnAgencyTabBtn() {driver.element().click(AgencyTabBtn);}
     public void ClickOnAddNewAgencyBtn() {driver.element().click(AgencyBtn);}
-    public void ClickOnContactTabBtn() {driver.element().click(ContactTabBtn);}
+    public void ClickOnContactTabBtn() {try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(ContactTabBtn);}
+
     public void ClickOnAddNewContactBtn() {driver.element().click(AddNewContactBtn);}
     public void ClickOnArchiveBtn() {driver.element().click(ArchiveBtn);}
     public void ClickOnUnArchiveBtn() {driver.element().click(UnArchiveBtn);}

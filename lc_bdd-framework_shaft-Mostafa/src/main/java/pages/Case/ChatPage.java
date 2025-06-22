@@ -9,6 +9,7 @@ public class ChatPage {
     By chatButton=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/fieldset[1]/button[1]");
     By CheckChatText=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]/p[1]");
     public void EnterChat(){
+        driver.element().scrollToElement(ChatTextField);
         driver.element().type(ChatTextField,"Welcome");
         driver.element().click(chatButton);
     }

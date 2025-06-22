@@ -10,6 +10,7 @@ import org.testng.Assert;
 import pages.Case.*;
 import pages.CommonPages.Homepage;
 import pages.LegalServicesPages.AddNewLegalServicePopUp;
+import pages.LegalServicesPages.ArchiveLegalServicesPage;
 import pages.LegalServicesPages.LegalServiceDetailsPage;
 
 import static pages.Case.ReportsPage.ReportAddress;
@@ -35,6 +36,7 @@ public class LegalServicesSteps {
     ArchivePage ArchivePageObj=new ArchivePage();
     LegalServiceDetailsPage LegalServiceDetailsPageObj=new LegalServiceDetailsPage();
     AddNewLegalServicePopUp AddNewLegalServicePopUpObj=new AddNewLegalServicePopUp();
+    ArchiveLegalServicesPage ArchiveLegalServicesPageObj=new ArchiveLegalServicesPage();
 
     @When("Click on the legal services page from sidebar menu")
     public void userClickOnTheAddLegalServicesButton() {
@@ -115,7 +117,56 @@ public class LegalServicesSteps {
     @Then("Check that legal services details is added successfully")
     public void checkThatLegalServicesDetailsIsAddedSuccessfully() {
         try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
-        Assert.assertEquals(DetailsPageObj.CheckTextFieldtext(),"heloo:");
+        Assert.assertEquals(DetailsPageObj.CheckTextFieldtext(),"heloo: ");
 
     }
+
+    @And("Delete Legal service")
+    public void deleteLegalService() {
+        LegalServiceDetailsPageObj.DeleteLegalService();
+    }
+
+
+    @When("Click on the communication logs tab of logs services")
+    public void clickOnTheCommunicationLogsTabOfLogsServices() {
+      LegalServiceDetailsPageObj.ClickOnCommunicationServiceLegalTab();
+    }
+
+    @When("Click on the Archive service button")
+    public void clickOnTheArchiveServiceButton() {
+        LegalServiceDetailsPageObj.ClickOnArchiveService();
+    }
+
+    @And("Select the archive reason")
+    public void selectTheArchiveReason() {
+        ArchiveLegalServicesPageObj.EnterTheArchiveReason();
+    }
+
+    @Then("check that service is Archived successfully")
+    public void checkThatServiceIsArchivedSuccessfully() {
+        Assert.assertEquals(ArchiveLegalServicesPageObj.CheckThatLegalServiceIsArchived(),"إعادة فتح الخدمة");
+
+    }
+
+    @And("Click on the UnArchive legal service button")
+    public void clickOnTheUnArchiveLegalServiceButton() {
+        ArchiveLegalServicesPageObj.ClickOnUnArchiveLegalServiceBtn();
+    }
+
+    @And("Enter the reason of unArchive service")
+    public void enterTheReasonOfUnArchiveService() {
+        ArchiveLegalServicesPageObj.EnterTheReasonOfUnArchived();
+    }
+
+    @And("confirm the UnArchive")
+    public void confirmTheUnArchive() {
+        ArchiveLegalServicesPageObj.ClickOnTheSaveUnArchivedBtn();
+    }
+
+    @Then("check that service is UnArchived successfully")
+    public void checkThatServiceIsUnArchivedSuccessfully() {
+        Assert.assertEquals(ArchiveLegalServicesPageObj.CheckThatLegalServiceIsUnArchived(),"أرشفة الخدمة");
+    }
+
+
 }

@@ -21,6 +21,8 @@ By AddModelBtn=By.xpath("//button[contains(text(),'أضف إلى قائمة ال
 By ModelTextField=By.xpath("//input[@name='title']");
 By SaveAddModel=By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[2]/div[1]/button[2]");
 By CheckAddedModel=By.xpath("//div[contains(text(),'تم حفظ نموذج القضية بنجاح')]");
+By CheckServiceDeleted=By.xpath("");
+
     public void ClickOnAddFieldBtn()
     {
         driver.element().click(ReturnPage);
@@ -41,6 +43,11 @@ By CheckAddedModel=By.xpath("//div[contains(text(),'تم حفظ نموذج ال�
     public String CheckTextFieldtext()
     {
         return driver.element().getText(CheckTextName);
+
+    }
+    public String CheckLegalServiceDeleted()
+    {
+        return driver.element().getText(CheckServiceDeleted);
 
     }
     public void ClickOnDeleteBtn()

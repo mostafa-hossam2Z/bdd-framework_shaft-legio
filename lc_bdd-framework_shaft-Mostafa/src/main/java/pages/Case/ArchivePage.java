@@ -32,6 +32,7 @@ public class ArchivePage {
     public String CheckThatCaseArchived(){
         return driver.element().getText(CheckArchived);
     }
+
     public String CheckThatCaseUnArchived(){
         try {
             Thread.sleep(1500);

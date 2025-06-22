@@ -1,16 +1,16 @@
-Feature: Legal services feature
+Feature: Legal Projects feature
   @testcase1
-  Scenario Outline: Add New legal services
+  Scenario Outline: Add New legal project
     Given User Fill "<Email>" And "<Password>"
-    When Click on the legal services page from sidebar menu
-    And User click on the Add new legal service button
+    When Click on the legal Projects page from sidebar menu
+    And User click on the Add new legal Project button
     And Add new legal service address
     And Choose the model
     And Add the Type of legal service
     And Choose the lawyer
     And Click on the save add new legal button
-    Then Check that legal services is added successfully
-    And Click on the legal services page from sidebar menu
+    Then Check that legal project is added successfully
+    And Click on the legal Projects page from sidebar menu
     And Click on the delete legal service button
     Examples:
       | Email          | Password |
@@ -20,15 +20,14 @@ Feature: Legal services feature
   @testcase2
   Scenario Outline: Search
     Given User Fill "<Email>" And "<Password>"
-    When Click on the legal services page from sidebar menu
-    And User click on the Add new legal service button
+    When Click on the legal Projects page from sidebar menu
+    And User click on the Add new legal Project button
     And Add new legal service address
     And Choose the model
     And Add the Type of legal service
     And Choose the lawyer
     And Click on the save add new legal button
-    Then Check that legal services is added successfully
-    And Click on the legal services page from sidebar menu
+    And Click on the legal Projects page from sidebar menu
     And Search by the legal address
     And Click on the delete legal service button
     Examples:
@@ -38,8 +37,8 @@ Feature: Legal services feature
   @testcase3
   Scenario Outline: Delete
     Given User Fill "<Email>" And "<Password>"
-    When Click on the legal services page from sidebar menu
-    And User click on the Add new legal service button
+    When Click on the legal Projects page from sidebar menu
+    And User click on the Add new legal Project button
     And Add new legal service address
     And Choose the model
     And Add the Type of legal service
@@ -47,8 +46,8 @@ Feature: Legal services feature
     And Click on the save add new legal button
     And Click on the legal services page from sidebar menu
     And Search by the legal address
-    And Click on the delete legal service button
-    Then Check that legal services is deleted successfully
+    And Click on the delete legal project button
+    Then Check that legal project is deleted successfully
     Examples:
       | Email          | Password |
       | Lawyer1Email   |Password  |

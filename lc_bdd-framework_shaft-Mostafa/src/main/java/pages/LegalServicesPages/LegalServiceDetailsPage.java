@@ -10,6 +10,7 @@ import static pages.LegalServicesPages.AddNewLegalServicePopUp.LegalServiceAddre
 public class LegalServiceDetailsPage {
     By AddNewLegalServiceBtn=By.xpath("//button[contains(text(),'خدمة قانونية جديدة')]");
     By CheckAddedNewLegal=By.xpath("//div[contains(text(),'تم اضافة الخدمة القانونية بنجاح')]");
+
     By UpdateCase=By.xpath("//div[contains(text(),'تم تعديل القضية بنجاح')]");
     By EditCaseBtn=By.xpath("//tbody/tr[1]/td[7]/div[1]/button[2]/i[1]");
     By DeleteLegalServiceBtn=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[5]/div[1]/button[2]");
@@ -34,10 +35,10 @@ public class LegalServiceDetailsPage {
     By ArchiveBtn=By.xpath("//button[contains(text(),'أرشفة القضية')]");
     By UnArchiveBtn=By.xpath("//button[contains(text(),'إعادة فتح القضية')]");
     By LegalPage=By.xpath("//span[contains(text(),'خدمات قانونية')]");
-
-
-    public void ClickOnAddNewLegalServiceBtn()
-    {driver.element().click(AddNewLegalServiceBtn);}
+    By ProjectManagementBtn=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/span[1]/span[2]");
+    By CommunicationServiceLegalTab=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[6]/a[1]");
+    By ArchiveLegalService=By.xpath("//button[contains(text(),'أرشفة الخدمة')]");
+    public void ClickOnAddNewLegalServiceBtn() {driver.element().click(AddNewLegalServiceBtn);}
     public void ClickOnLegalServicesDetailsPage()
     {driver.element().click(LegalServicesDetailsPage);}
     public String CheckAddedNewLegalServices() {return driver.element().getText(CheckAddedNewLegal);}
@@ -86,9 +87,20 @@ public class LegalServiceDetailsPage {
     public void ClickOnArchiveBtn() {driver.element().click(ArchiveBtn);}
     public void ClickOnUnArchiveBtn() {driver.element().click(UnArchiveBtn);}
     public void ClickOnLegalPage() {driver.element().click(LegalPage);}
+    public void DeleteLegalService() {
+        try {Thread.sleep(1400);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(ProjectManagementBtn);
+        driver.element().click(LegalPage);
+        driver.element().type(SearchByLegalServiceAddress,LegalServiceAddress);
+        driver.element().click(DeleteLegalServiceBtn);
+        driver.element().click(ConfirmDeleteLegalService);
+    }
 
+    public void ClickOnCommunicationServiceLegalTab() {
+        driver.element().click(CommunicationServiceLegalTab);}
 
-
+    public void ClickOnArchiveService() {
+        driver.element().click(ArchiveLegalService);}
 
 
 
