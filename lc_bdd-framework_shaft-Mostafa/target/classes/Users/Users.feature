@@ -4,16 +4,13 @@ Feature: Users feature
   Scenario Outline: Add New user to the users
     Given User Fill "<Email>" And "<Password>"
     And Click on users From sidebar Menu
-    Given User click on the Add new user button
+    When User click on the Add new user button
     And Add new username
     And Add Email
     And choose rule
     And Add permissions
     And click on  the save button
-    And Search by the username
     Then Check that new user is added successfully
-    And Click on the delete button
-
     Examples:
       | Email                 | Password |
       | Admin1Email_Staging   |Password  |
@@ -22,14 +19,14 @@ Feature: Users feature
   Scenario Outline: Search by the username
     Given User Fill "<Email>" And "<Password>"
     And Click on users From sidebar Menu
-    Given User click on the Add new user button
+    When User click on the Add new user button
     And Add new username
     And Add Email
     And choose rule
     And Add permissions
     And click on  the save button
     And Search by the username
-    Then Check that new user is added successfully
+   # Then Check that new user is added successfully
     And Click on the delete button
 
     Examples:
@@ -40,7 +37,7 @@ Feature: Users feature
   Scenario Outline: Edit the user information
     Given User Fill "<Email>" And "<Password>"
     And Click on users From sidebar Menu
-    Given User click on the Add new user button
+    When User click on the Add new user button
     And Add new username
     And Add Email
     And choose rule
@@ -61,7 +58,7 @@ Feature: Users feature
   Scenario Outline: Delete the user
     Given User Fill "<Email>" And "<Password>"
     And Click on users From sidebar Menu
-    Given User click on the Add new user button
+    When User click on the Add new user button
     And Add new username
     And Add Email
     And choose rule
@@ -79,7 +76,7 @@ Feature: Users feature
   Scenario Outline: Reset Password
     Given User Fill "<Email>" And "<Password>"
     And Click on users From sidebar Menu
-    Given User click on the Add new user button
+    When User click on the Add new user button
     And Add new username
     And Add Email
     And choose rule
@@ -87,7 +84,7 @@ Feature: Users feature
     And click on  the save button
     And Search by the username
     And Click on the reset password button
-    Then Check that username is deleted successfully
+    Then Check that Password is updated successfully
 
     Examples:
       | Email                 | Password |

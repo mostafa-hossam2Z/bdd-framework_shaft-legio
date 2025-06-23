@@ -14,7 +14,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>io.cucumber.core.cli.Main --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name ^Reset Password$ --glue CucumberSteps --glue SkipCourse C:/Users/mostafa.hossam/Downloads/bdd-framework_shaft-legio/lc_bdd-framework_shaft-Mostafa/src/test/resources/Users/Users.feature</value>
+    <value>io.cucumber.core.cli.Main --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name ^UnArchive Service$ --glue CucumberSteps --glue ProjectManagement C:/Users/mostafa.hossam/Downloads/bdd-framework_shaft-legio/lc_bdd-framework_shaft-Mostafa/src/test/resources/ProjectManagement/Legal projects.feature</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -138,7 +138,7 @@
   </parameter>
   <parameter>
     <key>org.jetbrains.run.directory</key>
-    <value>C:\Users\mostafa.hossam\Downloads\bdd-framework_shaft-legio\lc_bdd-framework_shaft-Mostafa\src\test\resources\Users</value>
+    <value>C:\Users\mostafa.hossam\Downloads\bdd-framework_shaft-legio\lc_bdd-framework_shaft-Mostafa\src\test\resources\ProjectManagement</value>
   </parameter>
   <parameter>
     <key>sun.java.launcher</key>
@@ -343,6 +343,10 @@
   <parameter>
     <key>cucumber.execution.wip</key>
     <value>false</value>
+  </parameter>
+  <parameter>
+    <key>appender.file.name</key>
+    <value>LOGFILE</value>
   </parameter>
   <parameter>
     <key>appender.file.name</key>
