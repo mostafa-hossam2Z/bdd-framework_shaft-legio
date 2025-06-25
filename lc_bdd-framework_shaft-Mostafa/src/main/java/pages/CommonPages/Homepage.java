@@ -16,7 +16,7 @@ public class Homepage {
    By CasesPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/a[1]/span[2]");
    By LegalPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[2]/a[1]/span[2]/span[1]");
    By LegalProjectsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/a[1]/span[2]/span[1]");
-
+   By LegalRequestsReceived=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/a[1]/span[2]");
     public void ClickOnUserPage(){
         driver.element().click(ClickOnUserPage);
     }
@@ -48,6 +48,9 @@ public class Homepage {
         try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
         driver.element().click(ProjectManagementBtn);
         driver.element().click(LegalProjectsPage);
+    }
+    public void ClickOnLegalRequestsReceivedPage(){
+        driver.element().click(LegalRequestsReceived);
     }
 
 

@@ -379,7 +379,7 @@ Feature: Legal Projects feature
     And Enter the reason of unArchive service
     And confirm the UnArchive
     Then check that project is UnArchived successfully
-    And Delete Legal service
+    And Delete Legal Project
 
 
     Examples:
