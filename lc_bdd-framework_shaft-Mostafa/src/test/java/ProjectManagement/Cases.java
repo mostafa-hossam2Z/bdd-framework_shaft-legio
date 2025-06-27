@@ -212,7 +212,7 @@ public class Cases {
         AddNewSessionPopUpPageObj.ClickOnTheSaveAddNewSessionBtn();
     }
 
-    @Then("check that new session is added to the case successfully")
+    @Then("check that new Judicial session is added to the case successfully")
     public void checkThatNewSessionIsAddedToTheCaseSuccessfully() {
         Assert.assertEquals(AddNewSessionPopUpPageObj.CheckAddedNewSession(),"تم اضافة الجلسة بنجاح");
     }

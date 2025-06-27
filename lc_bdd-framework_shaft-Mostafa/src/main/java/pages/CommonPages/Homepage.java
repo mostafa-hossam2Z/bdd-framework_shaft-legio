@@ -17,6 +17,9 @@ public class Homepage {
    By LegalPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[2]/a[1]/span[2]/span[1]");
    By LegalProjectsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/a[1]/span[2]/span[1]");
    By LegalRequestsReceived=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/a[1]/span[2]");
+   By JudicialSessionsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[9]/a[1]");
+
+
     public void ClickOnUserPage(){
         driver.element().click(ClickOnUserPage);
     }
@@ -52,7 +55,9 @@ public class Homepage {
     public void ClickOnLegalRequestsReceivedPage(){
         driver.element().click(LegalRequestsReceived);
     }
-
+    public void ClickOnJudicialSessionsPage(){
+        driver.element().click(JudicialSessionsPage);
+    }
 
 
 

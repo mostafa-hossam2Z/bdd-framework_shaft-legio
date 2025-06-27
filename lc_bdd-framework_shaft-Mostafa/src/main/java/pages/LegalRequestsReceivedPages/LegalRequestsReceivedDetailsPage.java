@@ -14,8 +14,8 @@ public class LegalRequestsReceivedDetailsPage {
     By CheckDeletedRequest=By.xpath("//h4[contains(text(),'لا يوجد بيانات')]");
     By LegalRequestReceivedDetailsBtn=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/button[1]");
     By LegalRequestsReceived=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/a[1]/span[2]");
-
-
+    By SentInquiry=By.xpath("//button[contains(text(),'إرسال')]");
+    By CheckAddedInquiry=By.xpath("//div[contains(text(),'تم اضافة استفسار')]");
     public void ClickOnAddRequestBtn(){driver.element().click(AddRequestBtn);}
     public String CheckAddedRequest(){return driver.element().getText(CheckAddedRequest);}
     public void SearchByLegalReceivedAddress()
@@ -29,12 +29,16 @@ public class LegalRequestsReceivedDetailsPage {
     public String CheckDeletedRequest(){return driver.element().getText(CheckDeletedRequest);}
 
     public void ClickOnLegalRequestReceivedDetailsBtn(){
+        try {Thread.sleep(1300);} catch (InterruptedException e) {throw new RuntimeException(e);}
         driver.element().click(LegalRequestReceivedDetailsBtn);}
 
     public void ClickOnDeleteRequestReceivedFromSideBarMenu(){
         driver.element().click(LegalRequestsReceived);
         driver.element().type(SearchByLegalReceivedAddress,LegalReceivedAddress);
+        try {Thread.sleep(1300);} catch (InterruptedException e) {throw new RuntimeException(e);}
         driver.element().click(DeleteReceivedBtn);
         driver.element().click(ConfirmDeleteReceivedBtn);}
+
+    public String CheckAddedInquiry(){return driver.element().getText(CheckAddedInquiry);}
 
 }

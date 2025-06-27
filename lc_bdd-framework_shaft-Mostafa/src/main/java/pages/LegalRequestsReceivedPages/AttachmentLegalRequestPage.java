@@ -1,6 +1,9 @@
 package pages.LegalRequestsReceivedPages;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
+
+import java.io.File;
 
 import static pages.CommonPages.base.driver;
 
@@ -13,10 +16,11 @@ public class AttachmentLegalRequestPage {
     By CheckAttachmentUploaded=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/span[1]/div[2]");
 
     By CheckAttachmentDeleted=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/h3[1]");
-    By ThreeDotsAttachment=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/button[1]");
-    By DeleteAttachmentBtn=By.xpath("//a[contains(text(),'حذف')]");
+    By ThreeDotsAttachment=By.xpath("//button[@class='rounded-circle position-absolute d-inline-flex align-items-center justify-content-center btn btn-primary btn-sm']");
+    By DownloadAttachmentBtn=By.xpath("//a[contains(text(),'تحميل')]");
     By ConfirmDeleteBtn=By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[3]/button[2]");
-
+    String DownloadLocation = "C:/Users/mostafa.hossam/Downloads/Competencies-Template-(2).xlsx";
+    File Folder = new File(DownloadLocation);
     public void ClickOnAttachmentTab(){
         driver.element().click(AttachmentTab);
     }
@@ -35,15 +39,16 @@ public class AttachmentLegalRequestPage {
         return driver.element().getText(CheckAttachmentUploaded);
 
     }
-    public void ClickOnTheDeleteBtn(){
+    public void ClickOnTheDownloadBtn(){
         driver.element().click(ThreeDotsAttachment);
         try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
-        driver.element().click(DeleteAttachmentBtn);
-        try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
-        driver.element().click(ConfirmDeleteBtn);
+        driver.element().click(DownloadAttachmentBtn);
+
     }
     public String CheckDeletedAttachment(){
         return driver.element().getText(CheckAttachmentDeleted);
     }
+    public void CheckDownloadedFile()
+    {Assert.assertTrue(Folder.exists());}
 
 }

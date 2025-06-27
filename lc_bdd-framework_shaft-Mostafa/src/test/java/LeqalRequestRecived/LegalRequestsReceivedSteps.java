@@ -5,15 +5,16 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 import pages.CommonPages.Homepage;
-import pages.LegalRequestsReceivedPages.AddNewRequestPopUp;
-import pages.LegalRequestsReceivedPages.AttachmentLegalRequestPage;
-import pages.LegalRequestsReceivedPages.LegalRequestsReceivedDetailsPage;
+import pages.LegalRequestsReceivedPages.*;
 
 public class LegalRequestsReceivedSteps {
     Homepage homePage=new Homepage();
     LegalRequestsReceivedDetailsPage LegalRequestsReceivedDetailsPageObj=new LegalRequestsReceivedDetailsPage();
     AddNewRequestPopUp AddNewRequestPopUpObj=new AddNewRequestPopUp();
     AttachmentLegalRequestPage AttachmentLegalRequestPageObj=new AttachmentLegalRequestPage();
+    InquiryPage InquiryPageObj=new InquiryPage();
+    UpdatesPage UpdatesPageObj=new UpdatesPage();
+
     @And("Click on Legal requests received From sidebar Menu")
     public void clickOnLegalRequestsReceivedFromSidebarMenu() {
         homePage.ClickOnLegalRequestsReceivedPage();
@@ -100,5 +101,105 @@ public class LegalRequestsReceivedSteps {
     @And("Click on the delete Request button from side bar menu")
     public void clickOnTheDeleteRequestButtonFromSideBarMenu() {
         LegalRequestsReceivedDetailsPageObj.ClickOnDeleteRequestReceivedFromSideBarMenu();
+    }
+
+    @And("Click on the download legal request received button")
+    public void clickOnTheDownloadLegalRequestReceivedButton() {
+        AttachmentLegalRequestPageObj.ClickOnTheDownloadBtn();
+
+    }
+
+    @Then("Check that request is downloaded successfully")
+    public void checkThatRequestIsDownloadedSuccessfully() {
+        AttachmentLegalRequestPageObj.CheckDownloadedFile();
+    }
+
+    @And("Go to the inquiry tab")
+    public void goToTheInquiryTab() {
+        InquiryPageObj.ClickOnInquiryTab();
+    }
+
+    @And("Click on the add new inquiry")
+    public void clickOnTheAddNewInquiry() {
+        InquiryPageObj.ClickOnAddInquiry();
+    }
+
+    @And("Click on the sent inquiry button")
+    public void clickOnTheSentInquiryButton() {
+        InquiryPageObj.ClickOnSentInquiry();
+    }
+
+    @Then("Check that new inquiry is added successfully")
+    public void checkThatNewInquiryIsAddedSuccessfully() {
+        Assert.assertEquals(LegalRequestsReceivedDetailsPageObj.CheckAddedInquiry(),"تم اضافة استفسار");
+    }
+
+    @And("Add address of Add InQuery")
+    public void addAddressOfAddInQuery() {
+        InquiryPageObj.EnterLegalReceivedInquiryAddress();
+    }
+
+    @And("Add the content of Add InQuery")
+    public void addTheContentOfAddInQuery() {
+        InquiryPageObj.EnterLegalReceivedInquiryContent();
+    }
+
+    @And("Click on Add response button")
+    public void clickOnAddResponseButton() {
+        InquiryPageObj.ClickOnAddResponseButton();
+    }
+
+    @And("Add the response")
+    public void addTheResponse() {
+        InquiryPageObj.AddResponseBody();
+    }
+
+    @Then("Check that response is added successfully")
+    public void checkThatResponseIsAddedSuccessfully() {
+        Assert.assertEquals(InquiryPageObj.CheckTheAddedResponse(),"Response");
+
+    }
+
+    @And("Close The Added Response pop up")
+    public void closeTheAddedResponsePopUp() {
+        InquiryPageObj.CloseSentRequestPopUp();
+    }
+
+    @And("Delete The response of an inquiry")
+    public void deleteTheResponseOfAnInquiry() {
+        InquiryPageObj.DeleteResponseBody();
+
+    }
+
+    @Then("Check that the response is deleted successfully")
+    public void checkThatTheResponseIsDeletedSuccessfully() {
+        Assert.assertEquals(InquiryPageObj.CheckTheDeletedResponse(),"لا يوجد ردود");
+
+    }
+
+    @And("Click on delete inquiry button")
+    public void clickOnDeleteInquiryButton() {
+        InquiryPageObj.DeleteInquiryBody();
+    }
+
+    @Then("Check that inquiry is deleted successfully")
+    public void checkThatInquiryIsDeletedSuccessfully() {
+        Assert.assertEquals(InquiryPageObj.CheckTheDeletedInquiry(),"لا يوجد بيانات");
+    }
+
+    @And("Go to the Updates tab")
+    public void goToTheUpdatesTab() {
+        UpdatesPageObj.ClickOnUpdatesTab();
+
+    }
+
+    @And("Click on the add new Update")
+    public void clickOnTheAddNewUpdate() {
+        UpdatesPageObj.ClickOnAddUpdate();
+    }
+
+    @Then("Check that Update is added successfully")
+    public void checkThatUpdateIsAddedSuccessfully() {
+        Assert.assertEquals(UpdatesPageObj.CheckAddedUpdates(),"تم اضافة تحديث بنجاح");
     }
 }

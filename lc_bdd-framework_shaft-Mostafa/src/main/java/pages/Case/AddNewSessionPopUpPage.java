@@ -39,7 +39,7 @@ public class AddNewSessionPopUpPage {
         try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
 
         driver.element().click(AssignedLawyersLists);
-        try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        try {Thread.sleep(2000);} catch (InterruptedException e) {throw new RuntimeException(e);}
 
         driver.element().click(EnterAssignedLawyer);
         try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
