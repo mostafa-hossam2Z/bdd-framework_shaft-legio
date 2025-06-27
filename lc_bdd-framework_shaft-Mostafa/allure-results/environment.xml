@@ -14,7 +14,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>io.cucumber.core.cli.Main --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name ^Add Attachment to the legal received address$ --glue CucumberSteps --glue LeqalRequestRecived C:/Users/mostafa.hossam/Downloads/bdd-framework_shaft-legio/lc_bdd-framework_shaft-Mostafa/src/test/resources/LegalRequestRecived/LegalRequestsReceived.feature</value>
+    <value>io.cucumber.core.cli.Main --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name ^Delete an Judicial session$ --glue JudicialSessions --glue CucumberSteps C:/Users/mostafa.hossam/Downloads/bdd-framework_shaft-legio/lc_bdd-framework_shaft-Mostafa/src/test/resources/JudicialSessions/JudicialSessions.feature</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -137,12 +137,8 @@
     <value>Zero based</value>
   </parameter>
   <parameter>
-    <key>targetOperatingSystem</key>
-    <value>windows</value>
-  </parameter>
-  <parameter>
     <key>org.jetbrains.run.directory</key>
-    <value>C:\Users\mostafa.hossam\Downloads\bdd-framework_shaft-legio\lc_bdd-framework_shaft-Mostafa\src\test\resources\LegalRequestRecived</value>
+    <value>C:\Users\mostafa.hossam\Downloads\bdd-framework_shaft-legio\lc_bdd-framework_shaft-Mostafa\src\test\resources\JudicialSessions</value>
   </parameter>
   <parameter>
     <key>sun.java.launcher</key>

@@ -107,6 +107,11 @@ public class JudicialSessionsSteps {
 
     @And("Click on the delete Judicial session button")
     public void clickOnTheDeleteJudicialSessionButton() {
+        AddNewJudicialSessionPopUpObj.ClickOnTheDeleteSessionBtn();
     }
 
+    @Then("Check that a new Judicial session is deleted successfully")
+    public void checkThatANewJudicialSessionIsDeletedSuccessfully() {
+        Assert.assertEquals(JudicialSessionsDetailsPageObj.CheckDeletedSession(),"تم حذف الجلسة بنجاح");
+    }
 }

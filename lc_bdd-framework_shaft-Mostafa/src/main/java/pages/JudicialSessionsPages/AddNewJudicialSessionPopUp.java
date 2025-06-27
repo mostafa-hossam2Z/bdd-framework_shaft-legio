@@ -21,8 +21,6 @@ public class AddNewJudicialSessionPopUp {
     By JudicialCircuitTextField = By.xpath("//input[@placeholder='اكتب الدائرة القضائية']");
     By SessionSubtype=By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/div[5]/div[1]/div[1]/div[1]/div[2]");
     By EnterSessionType=By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/div[5]/div[1]/div[2]/div[1]/div[1]");
-    By DeleteSessionBtn = By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/button[3]");
-    By ConfirmDeleteSessionBtn = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[3]/button[2]");
     By CourtList = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/div[6]/div[1]/div[1]/div[1]/div[2]");
     By EnterCourt = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/div[6]/div[1]/div[2]/div[1]/div[5]");
     By JudgeNameTextField = By.xpath("//input[@placeholder='اكتب اسم القاضي']");
@@ -40,14 +38,16 @@ public class AddNewJudicialSessionPopUp {
     By AddTaskBtn=By.xpath("//button[contains(text(),'اضافة مهمة')]");
     By TaskAddressTextField = By.xpath("//input[@placeholder='ادخل عنوان المهمة']");
     By TaskContentTextField=By.xpath("//textarea[@placeholder='ادخل محتوى المهمة']");
-    By PriorityLevelList = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[3]/select[1]");
-    By DateList = By.xpath("//input[@placeholder='yyyy/mm/dd']");
+    By PriorityLevelList = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/div[15]/div[2]/div[1]/div[1]/div[3]/select[1]");
+    By DateeList = By.xpath("(//input[@name='todos.0.deadline'])[1]");
     By EnterDateList = By.xpath("//span[normalize-space()='29']");
-    By LawyerList = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[5]/div[1]/div[1]/div[1]/div[2]");
-    By ChooseLawyer = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[5]/div[1]/div[2]/div[1]/div[1]");
+    By LawyerList = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/div[15]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[2]");
+    By ChooseLawyer = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/div[15]/div[2]/div[1]/div[1]/div[5]/div[1]/div[2]/div[1]/div[1]");
     By SaveAddNewJudicialSessionBtn = By.xpath("//button[contains(text(),'حفظ')]");
     By CheckAddedNewJudicialSession=By.xpath("//div[contains(text(),'تم اضافة الجلسة بنجاح')]");
-    By CheckAddedTask=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]");
+    By SessionNumberSearch=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]");
+    By DeleteSessionBtn = By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[10]/div[1]/button[2]");
+    By ConfirmDeleteSessionBtn = By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[3]/button[2]");
     public void ChooseCase(){
         driver.element().click(CaseList);
         driver.element().click(ChooseCase);}
@@ -80,7 +80,8 @@ public class AddNewJudicialSessionPopUp {
         driver.element().type(JudgeNameTextField, Judgename);}
     public void SelectProcedure () {
         driver.element().click(ProcedureTypeList);
-        driver.element().click(ChooseProcedureType);}
+        driver.element().click(ChooseProcedureType);
+        driver.element().click(ProcedureTypeList);}
     public void UploadDocuments() {
         driver.element().click(DocumentButton);
         driver.element().typeFileLocationForUpload(DocumentTextBox, "Document");}
@@ -92,19 +93,14 @@ public class AddNewJudicialSessionPopUp {
         driver.element().click(AddTaskBtn);
             TaskAddress = faker.number().digits(12);
             driver.element().type(TaskAddressTextField,TaskAddress );
-            try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
             TaskContent=faker.name().toString();
             driver.element().type(TaskContentTextField,TaskContent);
-            try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
             driver.element().select(PriorityLevelList,"متوسط");
-            try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
-            driver.element().click(DateList);
+            driver.element().click(DateeList);
             driver.element().click(EnterDateList);
-            try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
 
             driver.element().click(LawyerList);
             driver.element().click(ChooseLawyer);
-            try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
             driver.element().click(LawyerList);
         }
 
@@ -116,6 +112,8 @@ public class AddNewJudicialSessionPopUp {
         return driver.element().getText(CheckAddedNewJudicialSession);
     }
     public void ClickOnTheDeleteSessionBtn () {
+        try {Thread.sleep(1400);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().type(SessionNumberSearch,SessionNumber);
         driver.element().click(DeleteSessionBtn);
         driver.element().click(ConfirmDeleteSessionBtn);
 
