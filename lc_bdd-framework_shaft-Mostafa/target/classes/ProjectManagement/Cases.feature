@@ -190,8 +190,7 @@ Feature: Cases feature
     And Add Basic InFormations of the new session
     And Add Optional InFormations of the new session
     And Click on the save add new session button
-    Then check that new session is added to the case successfully
-
+    Then check that new Judicial session is added to the case successfully
     Examples:
       | Email          | Password |
       | Lawyer1Email   |Password  |

@@ -13,7 +13,7 @@ Feature: Departments feature
 
     Examples:
       | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Admin1Email_Staging   |Password1  |
 
   @testcase2
   Scenario Outline: Search
@@ -29,7 +29,7 @@ Feature: Departments feature
     And Click on the delete button
     Examples:
       | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Admin1Email_Staging   |Password1  |
 
   @testcase3
   Scenario Outline: Edit the department
@@ -48,7 +48,7 @@ Feature: Departments feature
     And Click on the delete button
     Examples:
       | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Admin1Email_Staging   |Password1  |
 
 
   @testcase5
@@ -67,7 +67,7 @@ Feature: Departments feature
 
     Examples:
       | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Admin1Email_Staging   |Password1  |
 
   @testcase6
   Scenario Outline: Reset Password of the department
@@ -84,4 +84,4 @@ Feature: Departments feature
     And Click on the delete button
     Examples:
       | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Admin1Email_Staging   |Password1  |

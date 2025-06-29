@@ -10,7 +10,7 @@ public class AttachmentPage {
     String AttachmentLocation = "C:\\Users\\mostafa.hossam\\Downloads\\Competencies Template (2).xlsx";
     By SaveAttachmentBtn=By.xpath("//button[contains(text(),'حفظ')]");
     By CheckAttachmentUploaded=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/span[1]/div[2]");
-   By CheckAttachmentDeleted=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/h3[1]");
+   By CheckAttachmentDeleted=By.xpath("//*[@id=\"kt_app_content_container\"]/div/div/div[2]/h3");
     By ThreeDotsAttachment=By.xpath("//button[@class='rounded-circle position-absolute d-inline-flex align-items-center justify-content-center btn btn-primary btn-sm']");
     By DeleteAttachmentBtn=By.xpath("//a[contains(text(),'حذف')]");
     By ConfirmDeleteBtn=By.xpath("/html[1]/body[1]/div[5]/div[1]/div[1]/div[3]/button[2]");

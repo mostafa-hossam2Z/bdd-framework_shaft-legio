@@ -18,8 +18,8 @@ public class Homepage {
    By LegalProjectsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[3]/a[1]/span[2]/span[1]");
    By LegalRequestsReceived=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[6]/a[1]/span[2]");
    By JudicialSessionsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[9]/a[1]");
-
-
+   By AgenciesAndDelegationsPage=By.xpath("//span[contains(text(),'الوكالات والتفاويض')]");
+   By CommunicationLogs=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[11]/a[1]/span[2]");
     public void ClickOnUserPage(){
         driver.element().click(ClickOnUserPage);
     }
@@ -57,6 +57,12 @@ public class Homepage {
     }
     public void ClickOnJudicialSessionsPage(){
         driver.element().click(JudicialSessionsPage);
+    }
+    public void ClickOnAgenciesAndDelegationsPage(){
+        driver.element().click(AgenciesAndDelegationsPage);
+    }
+    public void ClickOnCommunicationLogsPage(){
+        driver.element().click(CommunicationLogs);
     }
 
 

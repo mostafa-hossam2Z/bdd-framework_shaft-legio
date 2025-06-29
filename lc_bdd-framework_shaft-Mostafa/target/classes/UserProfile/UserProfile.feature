@@ -9,5 +9,5 @@
   Then Check that profile picture is uploaded successfully
 
   Examples:
-  | Email                 | Password |
-  | Admin1Email_Staging   |Password  |
+    | Email                     | Password |
+    | Admin1Email_Staging       |Password1  |

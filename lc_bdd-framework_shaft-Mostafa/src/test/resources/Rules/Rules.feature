@@ -11,8 +11,8 @@ Feature: Rules feature
     Then Check that new rule is added successfully
 
     Examples:
-      | Email                 | Password |
-      | Lawyer1Email   |Password  |
+      | Email                     | Password |
+      | Admin1Email_Staging       |Password1  |
 
   @testcase2
   Scenario Outline: Edit the Rule
@@ -29,7 +29,7 @@ Feature: Rules feature
 
     Examples:
       | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Admin1Email_Staging   |Password1  |
 
   @testcase3
   Scenario Outline: Delete the Rule
@@ -43,4 +43,4 @@ Feature: Rules feature
     Then Check that rule is deleted successfully
     Examples:
       | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Admin1Email_Staging   |Password1  |

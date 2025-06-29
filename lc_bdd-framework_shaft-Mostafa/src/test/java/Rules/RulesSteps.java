@@ -57,8 +57,7 @@ public class RulesSteps {
 
     @Then("Check that new rule is updated successfully")
     public void checkThatNewRuleIsUpdatedSuccessfully() throws InterruptedException {
-        Assert.assertEquals(RulesDetailsPageObj.CheckUpdatedRule(),"تم تعديل الدور");
-
+        Assert.assertEquals(RulesDetailsPageObj.CheckUpdatedRule(),"تم تعديل  الدور");
     }
 
     @And("Click on the delete rule button")

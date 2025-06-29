@@ -12,8 +12,9 @@ Feature: Users feature
     And click on  the save button
     Then Check that new user is added successfully
     Examples:
-      | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Email                     | Password |
+      | Admin1Email_Staging       |Password1  |
+
 
   @testcase2
   Scenario Outline: Search by the username
@@ -30,8 +31,9 @@ Feature: Users feature
     And Click on the delete button
 
     Examples:
-      | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Email                     | Password |
+      | Admin1Email_Staging       |Password1  |
+
 
   @testcase3
   Scenario Outline: Edit the user information
@@ -51,8 +53,9 @@ Feature: Users feature
     And Click on the delete button
 
     Examples:
-      | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Email                     | Password |
+      | Admin1Email_Staging       |Password1  |
+
 
   @testcase4
   Scenario Outline: Delete the user
@@ -69,8 +72,9 @@ Feature: Users feature
     Then Check that username is deleted successfully
 
     Examples:
-      | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Email                     | Password |
+      | Admin1Email_Staging       |Password1  |
+
 
   @testcase5
   Scenario Outline: Reset Password
@@ -87,6 +91,7 @@ Feature: Users feature
     Then Check that Password is updated successfully
 
     Examples:
-      | Email                 | Password |
-      | Admin1Email_Staging   |Password  |
+      | Email                     | Password |
+      | Admin1Email_Staging       |Password1  |
+
 

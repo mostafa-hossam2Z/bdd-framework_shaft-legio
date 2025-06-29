@@ -144,7 +144,7 @@ public class Cases {
     @Then("Check that Case details are added successfully")
     public void checkThatCaseDetailsAreAddedSuccessfully() {
         try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
-        Assert.assertEquals(DetailsPageObj.CheckTextFieldtext(),"heloo:");
+        Assert.assertEquals(DetailsPageObj.CheckTextFieldtext(),"heloo: ");
 
     }
 
@@ -225,6 +225,8 @@ public class Cases {
 
     @Then("check that new session is deleted successfully")
     public void checkThatNewSessionIsDeletedSuccessfully() {
+
+
     }
 
     @When("Click on the chats button of the case")
