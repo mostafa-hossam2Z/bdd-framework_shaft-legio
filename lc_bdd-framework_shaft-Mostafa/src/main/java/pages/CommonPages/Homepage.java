@@ -20,6 +20,9 @@ public class Homepage {
    By JudicialSessionsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[9]/a[1]");
    By AgenciesAndDelegationsPage=By.xpath("//span[contains(text(),'الوكالات والتفاويض')]");
    By CommunicationLogs=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[11]/a[1]/span[2]");
+   By SettingsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]");
+   By CasesSettingsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]");
+   By CasesTypeSettings=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[1]/a[1]/span[2]");
     public void ClickOnUserPage(){
         driver.element().click(ClickOnUserPage);
     }
@@ -64,7 +67,13 @@ public class Homepage {
     public void ClickOnCommunicationLogsPage(){
         driver.element().click(CommunicationLogs);
     }
+    public void ClickOnCasesSettingsPage(){
+        try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(SettingsPage);
+        driver.element().click(CasesSettingsPage);
+        driver.element().click(CasesTypeSettings);
 
+    }
 
 
 

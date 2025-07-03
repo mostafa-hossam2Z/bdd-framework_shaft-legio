@@ -33,11 +33,10 @@ public class CaseDetailsPage {
     By ArchiveBtn=By.xpath("//button[contains(text(),'أرشفة القضية')]");
     By UnArchiveBtn=By.xpath("//button[contains(text(),'إعادة فتح القضية')]");
     By LegalPage=By.xpath("//span[contains(text(),'خدمات قانونية')]");
-
+    By AddNewCaseSettings=By.xpath("//button[contains(text(),'نوع قضية جديد')]");
 
     public void ClickOnAddNewCaseBtn()
     {
-
         driver.element().click(AddNewCase);
     }
     public void ClickOnCaseDetailsPage()
@@ -98,7 +97,7 @@ public class CaseDetailsPage {
     public void ClickOnAddNewContactBtn() {driver.element().click(AddNewContactBtn);}
     public void ClickOnArchiveBtn() {driver.element().click(ArchiveBtn);}
     public void ClickOnUnArchiveBtn() {driver.element().click(UnArchiveBtn);}
-
+    public void ClickOnAddNewCaseSettingsBtn() {driver.element().click(AddNewCaseSettings);}
 
 
 

@@ -14,7 +14,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>io.cucumber.core.cli.Main --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name ^Add a new contact record$ --glue CucumberSteps --glue ProjectManagement --glue CommunicationLogs C:/Users/mostafa.hossam/Downloads/bdd-framework_shaft-legio/lc_bdd-framework_shaft-Mostafa/src/test/resources/CommunicationLogs/CommunicationLogs.feature</value>
+    <value>io.cucumber.core.cli.Main --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --glue SettingsSteps --glue CucumberSteps --glue ProjectManagement C:/Users/mostafa.hossam/Downloads/bdd-framework_shaft-legio/lc_bdd-framework_shaft-Mostafa/src/test/resources/SettingsFeatures/CasesSettings.feature</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -137,8 +137,12 @@
     <value>Zero based</value>
   </parameter>
   <parameter>
+    <key>targetOperatingSystem</key>
+    <value>windows</value>
+  </parameter>
+  <parameter>
     <key>org.jetbrains.run.directory</key>
-    <value>C:\Users\mostafa.hossam\Downloads\bdd-framework_shaft-legio\lc_bdd-framework_shaft-Mostafa\src\test\resources\CommunicationLogs</value>
+    <value>C:\Users\mostafa.hossam\Downloads\bdd-framework_shaft-legio\lc_bdd-framework_shaft-Mostafa\src\test\resources\SettingsFeatures</value>
   </parameter>
   <parameter>
     <key>sun.java.launcher</key>
