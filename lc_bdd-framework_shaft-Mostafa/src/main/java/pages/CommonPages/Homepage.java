@@ -23,6 +23,8 @@ public class Homepage {
    By SettingsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]");
    By CasesSettingsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]");
    By CasesTypeSettings=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[1]/a[1]/span[2]");
+   By CasesModelSettings=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[2]/a[1]/span[2]");
+   By CasesCourtPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[3]/a[1]/span[2]");
     public void ClickOnUserPage(){
         driver.element().click(ClickOnUserPage);
     }
@@ -72,8 +74,19 @@ public class Homepage {
         driver.element().click(SettingsPage);
         driver.element().click(CasesSettingsPage);
         driver.element().click(CasesTypeSettings);
-
     }
+    public void ClickOnCasesModelPage(){
+        try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(SettingsPage);
+        driver.element().click(CasesSettingsPage);
+        driver.element().click(CasesModelSettings);}
+
+    public void ClickOnCasesCourtPage(){
+        try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(SettingsPage);
+        driver.element().click(CasesSettingsPage);
+        driver.element().click(CasesCourtPage);}
+
 
 
 
