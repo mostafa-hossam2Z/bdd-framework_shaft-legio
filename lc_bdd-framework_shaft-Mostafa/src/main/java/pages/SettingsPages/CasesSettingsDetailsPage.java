@@ -40,7 +40,7 @@ public class CasesSettingsDetailsPage {
         Thread.sleep(1400);
         driver.element().type(SearchAddressCases,AddressName);}
     public void DeleteCaseTypeBtn(){
-
+        try {Thread.sleep(1000);} catch (InterruptedException e) {throw new RuntimeException(e);}
         driver.element().click(DeleteBtn);
         driver.element().click(ConfirmDeleteCase);}
     public void EditCaseTypeOption() {

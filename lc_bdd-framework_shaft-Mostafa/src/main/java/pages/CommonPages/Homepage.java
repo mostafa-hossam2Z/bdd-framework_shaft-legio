@@ -25,7 +25,19 @@ public class Homepage {
    By CasesTypeSettings=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[1]/a[1]/span[2]");
    By CasesModelSettings=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[2]/a[1]/span[2]");
    By CasesCourtPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[3]/a[1]/span[2]");
-    public void ClickOnUserPage(){
+   By SessionsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[4]/span[1]/span[2]");
+   By SessionsTypesPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[4]/div[1]/div[1]/a[1]/span[2]");
+   By LegalProjectPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[2]/span[1]/span[2]");
+   By LegalProjectTypesPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[2]/div[1]/div[1]/a[1]/span[2]");
+   By LegalProjectModelsPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[2]/div[1]/div[2]/a[1]/span[2]");
+   By ArchiveLegalProjectBtn=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[2]/div[1]/div[3]/a[1]/span[2]");
+   By LegalServicePage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[3]/span[1]/span[2]");
+   By LegalServiceTypesBtn=By.xpath("//span[contains(text(),'أنواع الخدمات القانونية')]");
+   By LegalServicesModel=By.xpath("//span[contains(text(),'نماذج الخدمات القانونية')]");
+   By LegalServicesArchivePage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[3]/div[1]/div[3]/a[1]/span[2]");
+   By SubSessionPage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[4]/div[1]/div[2]/a[1]/span[2]");
+   By SessionProcedurePage=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[4]/div[1]/div[3]/a[1]/span[2]");
+   public void ClickOnUserPage(){
         driver.element().click(ClickOnUserPage);
     }
 
@@ -87,8 +99,51 @@ public class Homepage {
         driver.element().click(CasesSettingsPage);
         driver.element().click(CasesCourtPage);}
 
+    public void ClickOnLegalProjectsTypesPage(){
+        try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(SettingsPage);
+        driver.element().click(LegalProjectPage);
+        driver.element().click(LegalProjectTypesPage);}
+    public void ClickOnLegalProjectsModelsPage(){
+        try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(SettingsPage);
+        driver.element().click(LegalProjectPage);
+        driver.element().click(LegalProjectModelsPage);}
+    public void ClickOnArchiveLegalProjectPage(){
+        driver.element().click(SettingsPage);
+        driver.element().click(LegalProjectPage);
+        driver.element().click(ArchiveLegalProjectBtn);}
 
+    public void ClickOnLegalServicesPage(){
+        driver.element().click(SettingsPage);
+        driver.element().click(LegalServicePage);
+        driver.element().click(LegalServiceTypesBtn);}
 
+    public void ClickOnLegalServicesModelPage(){
+        driver.element().click(SettingsPage);
+        driver.element().click(LegalServicePage);
+        driver.element().click(LegalServicesModel);}
+    public void ClickOnLegalServicesArchivePage(){
+        driver.element().click(SettingsPage);
+        driver.element().click(LegalServicePage);
+        driver.element().click(LegalServicesArchivePage);}
 
+    public void ClickOnTypesOfSessionsPage(){
+        try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(SettingsPage);
+        driver.element().click(SessionsPage);
+        driver.element().click(SessionsTypesPage);}
 
+    public void ClickOnSubSessionsTypePage(){
+        try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(SettingsPage);
+        driver.element().click(SessionsPage);
+        driver.element().click(SubSessionPage);}
+
+    public void ClickOnSessionsActionPage(){
+        try {Thread.sleep(1500);} catch (InterruptedException e) {throw new RuntimeException(e);}
+        driver.element().click(SettingsPage);
+        driver.element().click(SessionsPage);
+        driver.element().click(SessionProcedurePage);}
 }
+
