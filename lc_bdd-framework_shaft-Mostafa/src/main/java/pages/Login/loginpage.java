@@ -11,8 +11,8 @@ public class loginpage extends base {
     By LogOutButton = By.xpath("(//*[@id=\"btnWinjiLogOff\"])[1]");
     By logout = By.xpath("(//*[contains(text(),'My Profile')])[2]");
     By Emaill =By.xpath("//input[@type='email']");
-    By Password = By.xpath("//input[@name='password']");
-    By login= By.xpath("//button[@id='kt_sign_in_submit']");
+    By Password = By.id("login_password");
+    By login= By.xpath("//button[@type='submit']");
 
 
     public void login(String email, String password)

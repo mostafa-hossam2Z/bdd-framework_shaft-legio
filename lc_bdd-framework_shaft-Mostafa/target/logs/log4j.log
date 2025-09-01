@@ -1,936 +1,156 @@
-[INFO ] 2025-07-05 00:13:10.989 [main] ReportManager - 
+[INFO ] 2025-08-30 17:20:09.766 [main] ReportManager - 
 [0;7m------------------------------------------------------------------------------------------------------------------------------------------------
                                                     Powered by [1mSHAFT v.8.4.20241024[22m                                                    
                                    Visit SHAFT's user guide [4mhttps://shafthq.github.io/[24m to learn more                                   
 ------------------------------------------------------------------------------------------------------------------------------------------------
 [0m
-[INFO ] 2025-07-05 00:13:10.996 [] ReportManager - Checking for engine updates...
-[INFO ] 2025-07-05 00:13:11.017 [] ReportManager - Initializing Summary Reporting Environment...
-[INFO ] 2025-07-05 00:13:11.023 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[INFO ] 2025-07-05 00:13:11.029 [] ReportManager - Initializing Allure Reporting Environment...
-[ERROR] 2025-07-05 00:13:11.043 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:13:11.047 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[INFO ] 2025-07-05 00:13:11.086 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
-[INFO ] 2025-07-05 00:13:11.295 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
-[INFO ] 2025-07-05 00:13:11.861 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
-[INFO ] 2025-07-05 00:13:11.864 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
-[INFO ] 2025-07-05 00:13:11.865 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
-[DEBUG] 2025-07-05 00:13:13.599 [] BasicClientConnectionManager - Get connection for route {s}->https://api.github.com:443
-[DEBUG] 2025-07-05 00:13:13.614 [] DefaultClientConnectionOperator - Connecting to api.github.com:443
-[INFO ] 2025-07-05 00:13:14.931 [] ReportManager - Loaded OpenCV "opencv_java490".
-[DEBUG] 2025-07-05 00:13:15.347 [] RequestAddCookies - CookieSpec selected: ignoreCookies
-[DEBUG] 2025-07-05 00:13:15.350 [] RequestAuthCache - Auth cache not set in the context
-[DEBUG] 2025-07-05 00:13:15.350 [] RequestTargetAuthentication - Target auth state: UNCHALLENGED
-[DEBUG] 2025-07-05 00:13:15.351 [] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
-[DEBUG] 2025-07-05 00:13:15.352 [] DefaultClientConnection - Sending request: GET /repos/ShaftHQ/SHAFT_ENGINE/releases/latest HTTP/1.1
-[DEBUG] 2025-07-05 00:13:15.352 [] wire -  >> "GET /repos/ShaftHQ/SHAFT_ENGINE/releases/latest HTTP/1.1[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.353 [] wire -  >> "Accept: */*[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.353 [] wire -  >> "Host: api.github.com[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.354 [] wire -  >> "Connection: Keep-Alive[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.354 [] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/23.0.1)[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.354 [] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.354 [] wire -  >> "[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.354 [] headers - >> GET /repos/ShaftHQ/SHAFT_ENGINE/releases/latest HTTP/1.1
-[DEBUG] 2025-07-05 00:13:15.354 [] headers - >> Accept: */*
-[DEBUG] 2025-07-05 00:13:15.354 [] headers - >> Host: api.github.com
-[DEBUG] 2025-07-05 00:13:15.354 [] headers - >> Connection: Keep-Alive
-[DEBUG] 2025-07-05 00:13:15.354 [] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/23.0.1)
-[DEBUG] 2025-07-05 00:13:15.354 [] headers - >> Accept-Encoding: gzip,deflate
-[DEBUG] 2025-07-05 00:13:15.626 [] wire -  << "HTTP/1.1 200 OK[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.629 [] wire -  << "Date: Fri, 04 Jul 2025 21:13:11 GMT[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.629 [] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.630 [] wire -  << "Cache-Control: public, max-age=60, s-maxage=60[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.630 [] wire -  << "Vary: Accept,Accept-Encoding, Accept, X-Requested-With[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.630 [] wire -  << "ETag: W/"70d8b5963cee14eed049415a97de9ea2e88c3559c864fd184b769c9edc89ea50"[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.630 [] wire -  << "Last-Modified: Fri, 30 May 2025 22:04:04 GMT[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.630 [] wire -  << "X-GitHub-Media-Type: github.v3; format=json[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.631 [] wire -  << "x-github-api-version-selected: 2022-11-28[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.631 [] wire -  << "Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.631 [] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.631 [] wire -  << "Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.631 [] wire -  << "X-Frame-Options: deny[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.631 [] wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.632 [] wire -  << "X-XSS-Protection: 0[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.632 [] wire -  << "Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.632 [] wire -  << "Content-Security-Policy: default-src 'none'[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.632 [] wire -  << "Content-Encoding: gzip[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.633 [] wire -  << "Server: github.com[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.633 [] wire -  << "Accept-Ranges: bytes[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.633 [] wire -  << "X-RateLimit-Limit: 60[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.633 [] wire -  << "X-RateLimit-Remaining: 53[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.633 [] wire -  << "X-RateLimit-Reset: 1751665890[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.634 [] wire -  << "X-RateLimit-Resource: core[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.634 [] wire -  << "X-RateLimit-Used: 7[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.634 [] wire -  << "Content-Length: 1438[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.635 [] wire -  << "X-GitHub-Request-Id: AC6A:237D04:316B172:32978CA:686843E6[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.635 [] wire -  << "[\r][\n]"
-[DEBUG] 2025-07-05 00:13:15.636 [] DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
-[DEBUG] 2025-07-05 00:13:15.636 [] headers - << HTTP/1.1 200 OK
-[DEBUG] 2025-07-05 00:13:15.636 [] headers - << Date: Fri, 04 Jul 2025 21:13:11 GMT
-[DEBUG] 2025-07-05 00:13:15.636 [] headers - << Content-Type: application/json; charset=utf-8
-[DEBUG] 2025-07-05 00:13:15.636 [] headers - << Cache-Control: public, max-age=60, s-maxage=60
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << Vary: Accept,Accept-Encoding, Accept, X-Requested-With
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << ETag: W/"70d8b5963cee14eed049415a97de9ea2e88c3559c864fd184b769c9edc89ea50"
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << Last-Modified: Fri, 30 May 2025 22:04:04 GMT
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << X-GitHub-Media-Type: github.v3; format=json
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << x-github-api-version-selected: 2022-11-28
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << Access-Control-Allow-Origin: *
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << X-Frame-Options: deny
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << X-Content-Type-Options: nosniff
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << X-XSS-Protection: 0
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << Content-Security-Policy: default-src 'none'
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << Content-Encoding: gzip
-[DEBUG] 2025-07-05 00:13:15.637 [] headers - << Server: github.com
-[DEBUG] 2025-07-05 00:13:15.639 [] headers - << Accept-Ranges: bytes
-[DEBUG] 2025-07-05 00:13:15.639 [] headers - << X-RateLimit-Limit: 60
-[DEBUG] 2025-07-05 00:13:15.639 [] headers - << X-RateLimit-Remaining: 53
-[DEBUG] 2025-07-05 00:13:15.639 [] headers - << X-RateLimit-Reset: 1751665890
-[DEBUG] 2025-07-05 00:13:15.639 [] headers - << X-RateLimit-Resource: core
-[DEBUG] 2025-07-05 00:13:15.639 [] headers - << X-RateLimit-Used: 7
-[DEBUG] 2025-07-05 00:13:15.639 [] headers - << Content-Length: 1438
-[DEBUG] 2025-07-05 00:13:15.639 [] headers - << X-GitHub-Request-Id: AC6A:237D04:316B172:32978CA:686843E6
-[DEBUG] 2025-07-05 00:13:15.663 [] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
-[DEBUG] 2025-07-05 00:13:15.664 [] wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xb5]Xo[0x9b]:[0x14][0xfd]*([0xd3][0xf4][0xa4][0xaa]8[0x84][0x90][0x86] M{[0xdb][0xda][0xfd][0xf8][0xa3][0xdd][0xdb][0xd6][0xa7]'[0xbd][0xbd])r[0xc0][0x5][0xa7]`Sl[0x92]u[0xd5][0xbe][0xfb];"
-[DEBUG] 2025-07-05 00:13:15.665 [] wire -  << "6[0x90]4[0xd1][0xd6]M#S%rq[0xe1]\[0xfb][0xde]s[0xcf][0xb5][0xb9][0x1b][0xd4]U>[0x88][0x6][0x99][0xd6][0xa5][0x8a][0x86]CZr[0x92]r[0x9d][0xd5][0xb][0x12][0xcb]bX[0xb1]R[0xaa][0xe1][0x87][0x8c]^[0xe9][0xd7][0xef][0x86][0x1f]^?{y9?[0xbb]x[0xf5][0xe6][0xe2][0xc][0xff][0xca][0x19]UL[\r]}[0xdf][0x1f]M[0xc7][0xa3]Q88[0x1e]P[0xa5][0x98]V[0xf3][0xc3]a[0xe][0x1b]D@[0xd7]e.i[0xb2][0x7][0xdd][0xc][0xaa]_[0x9e]r[0xb][0xf7]T[0xd0][0x82][0x1d][0xe7]t[0xc1][0xf2][0xaf][0xf0][0x95][0xe9]"[0xdf][0xf3]t/([0xf][0x87]C[0xd3]t8#>[0xf1]=[0xe2]M[0xc6][0x1e][0xe0]x2[0x88]6QB[0x90]j[0x9d][0xc9]j[0x10][0xdd][\r]r[0x99]r[0x81][0xe8]7[0xe0].[0x8d]5[0x97]B}\H[0xfd][0xa9]}-[0x18][0x85][0xb3][0xd0][0xf][0xfd][0xe3][0x81][0x90][0x9][0x9b][0x1b][0xa4][0xc1][0xf9][0xe9][0xf9][0xc9][0xbb]b[0xe6]][0x9c][0x9e][0x5]o/[0xd3][0xdb][0xb7][0xa7]o[0x9e][0x98][0xd8][0xaf][0xa8][0xa6][0xd5]~[0xec][0xed]`[0x17][0xa0]Z[0xb1]*[0x96]B3[0xa1]mz[0xb9][0x18][0x8e]&[0xe3][0x93][0xf0][0xe9][0xea]I[0x0][0x84][0xb4]j1[0xac][0x1b][0x13][0xf3][0x87][0xb8]a[0xc0][0xd4]pw[0xea][0x8f]'[0xcf]1[0xf9][0xc7][0x93][0xd3][0x1f][0x6][0x91][0x96][0xe5][0xfe][0xcb]x[0xe7]J[0xe6][0xb9]\[0x3]w[0x19][0xbb][0xb4]|[0xd0][0xf5]p[0x3][0xb2][0x1][0xe4]"[0xed][0xf][0x8][0x90][0xbb][0xa1][0xd4][0x19]C[0x8c][0xb1]t[0xc3][0x93][0x94][0xab][0x1f][0xb1][0xfd][0xe1][0xa9]Z[0x80];[0x4]Qi[0xe4][0xd6]@*[0xa4][0xab]b[0xfb]<[0xdf]+[0xcb][0x87]A[[0x8]Lv-0[0xcf];[[0xc5][0x16][0xbb]^[0xa8][0xb8][0xe2][0xa5]eY[0x9f][0x80][0xec][0x0][0x1]XV)[0x15][0xfc][0xb][0xed][\r][0xc] [0x5]<+;}&h[0x1][0x0][0xc4]V[0xa0]z/[0xa4][0x6][0xe1]nXV|E[0xe3][[0x13][0xc6][0x8a][0xc5][0x8c][0xaf][0x90][0xa3][0xfe][0xe8]{P[0x0][0xd7][0xb7]%C[0xf1]=[0x97][0x1a]7&[0xcf][0xf3][0x15]g[0xeb]y;\[0xd6][0x8b][0x9c][0xc7]&[0x95]\[0xb3]9M[\n]"
-[DEBUG] 2025-07-05 00:13:15.666 [] wire -  << "#[0x1f]W4W[0xec][0xeb]}[0x85]x6[0xbf]^[0x9f][0xbe]}[0xf1][0x8a]][0x9e][0xa8][0xe0][0xe2][0xaf][0x8c][0xb9][0x6][0x9a][0xa6]s[0xa3]s[0x80][0xdf][0x13](p.ez[0xe]I([0xb8][0xe6]*[0xc3][0x13][0x5][0x5]40[0xbf][0xf9]|R[0xa1]![0xb4][0x8e][0x8f][0x7]e[0xc5][0xda]f[0xb0][0x19][0x8a]+F5"D[0xf1][0xd4][0xc0]([0xa1][0xeb]M[0xdc][0xb1]w[0xe9][0xfb][0x91]7[0x8e][0x2][0xef]_@[0xdb][0xb5][0xa8][0xec];O[0x5][0x91][0x17][0x98][0xa7]Z[0xfd][0x8f]>~2[0xb][0xa8][0x16]4[0xdf]W[0xe6][0x9f]oY[0xed][0xfb][0xfb][0xf2][0xfc][0x85][0x97][0xbd]`[0xdb][0xf7][0xf7]a[0x17]2[0xb9][0xc5][0xea][0x1f]=r[0xfe][0xc9][0xa8][0xfe]C9/2*R[0x96][0xfc]'[0x8e][0x9c][0xbf][0xcb][0x4][0xc5]"R[0x7]qJ[\n]"
-[DEBUG] 2025-07-05 00:13:15.666 [] wire -  << "[0xe6],n[0x9d]?[0xcf]eF[0x17][0xb8]p[0xe6]p[0xe1]t[\r][0xf9]G}[0xa7][0xac][0xf3]|8[0x9a]M[0x3][0x3][w[0xb0][0x88][0x92][0x83][0xe6]"[0x95][0xa3][0xa5][0xf3][0x8a][0x9][0xdf][0xde][0x1d][0xc0][0xcd][0xc4][0xb8]y^[0x17][0xa5][0x83]R%T[0x95],[0xd6][0xcb][0xa8][0xfd]]3[0xba]b[0x95]sU[0xc9][0xc2][0x19][0x11]pll[0xdc][+[0xb0][0xbe][0x13]V2[0x91]P[0xb4][0x88]_Y[0xe2]t[0xc7][0xf7][0xb2][0x16]\G[0xf6][0xea].[0xe0][0xd0]z[0x9d][0x90][0x91]OF[0xc6][0xab][0xb5][0xfc][0x3]x=[0xd9]xEy[0x90]T[0xca]4g$[0xad][0xd1])#{m[0x1c][0x8f][0xc7]$ SwY1[0xe3][0xdc][0xde][0x85][0xf6][0xae][0xff][0xb2][0xc3][0xcd][0x4][0xb8][0xec]6:[0xb])xJ[0xab][0x98][0xd3]h[0xcd][0x16][0x9][0xb4][0x89]U[0x5][0x15]4[0xed][0xc2]B[0xbc]&[0xe]'dD[0xbc][0x3][0xcc]b[0xb6][0xa1]-sJ[0x4][0xe2]s[0x91][0xf7][0xa7]S[0xe8][0xed][0x4][0xf7][0x8a]*[0xcd]* [0x93]%[0x8d][0xaf][0x95][0x14][0x4]UB[0x8d][0xf4]E[0xed][0x80][0xdb][\r][0xb8][0xcb][0xe4]:lB[0x8f][0x84][0x87][0xc4]2[\r][0xd6][0xec][0x10][0x8b][\r][0xfd]][0xa6])Y[0x97][0xd1][0xd2]\;n[0xc3][0x8f]e[0xd9][0x8][0xdb]<X[0xbd][0x93][0x1c]n[0xeb][\n]"
-[DEBUG] 2025-07-05 00:13:15.666 [] wire -  << "I[0x8e][0xeb][0xb8].[0x16][0xac][0x8a]:[0xc3][0xd5]Li[0xa8][0x85][0xe5][0xf8][0x94][0xf8]>V[0x9][0xef][0xd6]:[0x0][0xc7]C[0x9b]\[[0xd5][0xdf][0xf4][0xbe][0xdc][0xd0][0xfc][0xf0][0xbe]g[[\n]"
-[DEBUG] 2025-07-05 00:13:15.667 [] wire -  << "|[0xd3]w[0xc9]ci[0xb6][0xac]hG[0x1d][0xb7][0xc3]$F[0xf7][0xd8][0xfd][0xfe][0xec][0xd9][0xe9][0xf9][0x19])[0x92][0xfe][0xfc][0x9e]m[0x89]d[0xc4][0x83][0xea][0x1c][0xed][0x8c]SA$[0xe5][0x91]Z[0xd3][0x14][0xf5][0xea]V[0xec][0xa6]Fz[0xdd][0x15][0xcd]9[0xe8]-[0xcd][0x8][0xb6]pJ[0xd5][0xd8][0x7]v[0x14][0xf][0x82][0x86]p>[0x81][0x15][0xf6]'[0xdc][0xcc][0xf6][0x8b][0x8d][0x90]+[0x1c][0xe6][0x4][0xaf][0x8b][0xec][0x86]tf[0xd4][0x19][0xee]6[0xfd][0x1][0x19][0x1b]5[0x1][0xf5]`[0x8d][0xf]Qj[0xb3]-[0xf1]M[0x84]XI[0xb][0x92]1[0xda][0xcc]&[0xda]X.T[0xae][0x15]Z2![0x13][0xab][0xb1]0N[0xe][0x10][0x88][0xad][0xbc][0x9a][0x8e]V[0xc8][0xf8][0x9a]k[0x19][0xb5][0xbf]n,[0xa1][0xe1]]k[0x99]6kGk[0x9][0xf][0xb2][0xf6]mC3k/n[0xd5]M[0x1e][0xd9]+[0xdc][\n]"
-[DEBUG] 2025-07-05 00:13:15.667 [] wire -  << "[0x81][0xce][\n]"
-[DEBUG] 2025-07-05 00:13:15.667 [] wire -  << ".,[0x1b][0xef]f[0xc3]f[0x3]?#[0x87][0x89][0xbb]mk[0xa3]Y[0x88][0x10][0xd6][0xa9][0xb3][0xe2][0x9][0x93][0xd8][0x8c]`[0xb9][0x89][0xd9][0x96][0x8]t[0xe8][0xb5][0xac][0xae][0x8d]M[0x95][0xc3]>[0x9b]>[0xf]6bcb;[0xee][0x1]Jc[0xab]9v'Q[0xd2]8c[0xa4]L[0xae][0x16][0xf2]s[0xd4][0xfc]t[0x9][0xf7]H[0xd0]$[0xdc]C[0xe6]{J[0xad][0xef]y;[0x82]cJ[0xcd]mk-[0xba][0xd3]%[0x1d][0xc9]6[0xce]A[0xba][0x83]8[0xb7]B[0xd3])[0xed][0x8e]s[0xf4][0x17][0xe1]*[0x4][0xa1][0xa0][)[0xf8]M[0xb3][0xd8][0xed]o8*[0xe9][0x14]s[0x1][0xfb][0xb6]f[0xe3]9[0xf0][0xc9][0xb4])7k[0xf5][0xae]7[0x84][0xfc]p[0xaf][0xf9][0x9e][0xde][0xfb]m[0xc3];[0x0][0xfb]1[0x9][0xab]~`[0xff][0xd4][0xb0][0x9f][0xb]+[0xbd][0xe]>f)[0x9c][0x8c][0x1d][0x98][0xb8][0xc6][0x19][0x9a]-s[0xd6][0x19][0x13]NU[0xb]aJ[0xc1][0xb4]ae[0x8a][0xa0][0xa4][0x15][0xb6][0xd8],wje[0xc6][0xf]R[0x13][0x98][0x96][0x15][0xc3][0xf7][0xcd][0x87]5[0x7][0xc7][0xaa][0xb2]o[0x9d][0x1][0x13][0x85]n[0xfe][0x8e][0x8e]^[0xe2][0xa4][0xd0][0x9e]Ap[0x18]8:[0x8a]~[0xfa][0x8c][0x1]u[0xc2][0x82][0xd9][0xf6][0x80][0x13]x3B[0xcc][0xb6][0xfe][0xfe]W[0xae][0x2]Gm[0xfb]a![0x96][0xb5][0xc0][0xb9][0xcf]"
-[DEBUG] 2025-07-05 00:13:15.668 [] wire -  << "[0xff][0xfa]?4#[0xb]0][0x14][0x0][0x0]"
-[DEBUG] 2025-07-05 00:13:15.668 [] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-[DEBUG] 2025-07-05 00:13:15.866 [] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5bb1d2bc
-[DEBUG] 2025-07-05 00:13:15.867 [] BasicClientConnectionManager - Connection can be kept alive indefinitely
-[WARN ] 2025-07-05 00:13:17.233 [main] ReportManager - Jul 05, 2025 12:13:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-[WARN ] 2025-07-05 00:13:17.234 [main] ReportManager - WARNING: Unable to find CDP implementation matching 137
-[WARN ] 2025-07-05 00:13:17.235 [main] ReportManager - Jul 05, 2025 12:13:17 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-[WARN ] 2025-07-05 00:13:17.235 [main] ReportManager - WARNING: Unable to find version of CDP to use for 137.0.7151.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[INFO ] 2025-07-05 00:13:17.243 [main] ReportManager - Successfully Opened: "Windows | Chrome".
-[ERROR] 2025-07-05 00:13:17.249 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:17.256 [main] AllureLifecycle - Could not stop step: step with uuid c6f3aa42-168c-4c80-b68d-f48ccadfb0c4 not found
-[WARN ] 2025-07-05 00:13:17.760 [] ReportManager - 
+[INFO ] 2025-08-30 17:20:09.772 [] ReportManager - Checking for engine updates...
+[INFO ] 2025-08-30 17:20:09.780 [] ReportManager - Initializing Summary Reporting Environment...
+[INFO ] 2025-08-30 17:20:09.785 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
+[INFO ] 2025-08-30 17:20:09.792 [] ReportManager - Initializing Allure Reporting Environment...
+[ERROR] 2025-08-30 17:20:09.802 [main] AllureLifecycle - Could not add attachment: no test is running
+[INFO ] 2025-08-30 17:20:09.806 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
+[INFO ] 2025-08-30 17:20:09.839 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
+[INFO ] 2025-08-30 17:20:10.027 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
+[INFO ] 2025-08-30 17:20:10.584 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
+[INFO ] 2025-08-30 17:20:10.586 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
+[INFO ] 2025-08-30 17:20:10.587 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
+[DEBUG] 2025-08-30 17:20:12.471 [] BasicClientConnectionManager - Get connection for route {s}->https://api.github.com:443
+[DEBUG] 2025-08-30 17:20:12.504 [] DefaultClientConnectionOperator - Connecting to api.github.com:443
+[DEBUG] 2025-08-30 17:20:13.183 [] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2025-08-30 17:20:13.186 [] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2025-08-30 17:20:13.186 [] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2025-08-30 17:20:13.187 [] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2025-08-30 17:20:13.187 [] DefaultClientConnection - Sending request: GET /repos/ShaftHQ/SHAFT_ENGINE/releases/latest HTTP/1.1
+[DEBUG] 2025-08-30 17:20:13.188 [] wire -  >> "GET /repos/ShaftHQ/SHAFT_ENGINE/releases/latest HTTP/1.1[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.189 [] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.190 [] wire -  >> "Host: api.github.com[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.190 [] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.190 [] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.190 [] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.190 [] wire -  >> "[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.190 [] headers - >> GET /repos/ShaftHQ/SHAFT_ENGINE/releases/latest HTTP/1.1
+[DEBUG] 2025-08-30 17:20:13.191 [] headers - >> Accept: */*
+[DEBUG] 2025-08-30 17:20:13.191 [] headers - >> Host: api.github.com
+[DEBUG] 2025-08-30 17:20:13.191 [] headers - >> Connection: Keep-Alive
+[DEBUG] 2025-08-30 17:20:13.191 [] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/22.0.1)
+[DEBUG] 2025-08-30 17:20:13.191 [] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2025-08-30 17:20:13.523 [] wire -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.527 [] wire -  << "Date: Sat, 30 Aug 2025 14:20:09 GMT[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.528 [] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.528 [] wire -  << "Cache-Control: public, max-age=60, s-maxage=60[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.529 [] wire -  << "Vary: Accept,Accept-Encoding, Accept, X-Requested-With[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.529 [] wire -  << "ETag: W/"77b58ee584e127b2cb25e85d0181607eecfc9bfb9bd47b7599e261fcc67f0392"[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.529 [] wire -  << "Last-Modified: Sat, 23 Aug 2025 04:43:44 GMT[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.529 [] wire -  << "X-GitHub-Media-Type: github.v3; format=json[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.529 [] wire -  << "x-github-api-version-selected: 2022-11-28[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.530 [] wire -  << "Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.530 [] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.530 [] wire -  << "Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.530 [] wire -  << "X-Frame-Options: deny[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.531 [] wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.531 [] wire -  << "X-XSS-Protection: 0[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.531 [] wire -  << "Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.531 [] wire -  << "Content-Security-Policy: default-src 'none'[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.531 [] wire -  << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.531 [] wire -  << "Server: github.com[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.531 [] wire -  << "Accept-Ranges: bytes[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.533 [] wire -  << "X-RateLimit-Limit: 60[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.534 [] wire -  << "X-RateLimit-Remaining: 54[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.534 [] wire -  << "X-RateLimit-Reset: 1756565081[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.534 [] wire -  << "X-RateLimit-Resource: core[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.534 [] wire -  << "X-RateLimit-Used: 6[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.534 [] wire -  << "Content-Length: 778[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.535 [] wire -  << "X-GitHub-Request-Id: A4E9:14D604:105BC7B:F296BA:68B30899[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.535 [] wire -  << "[\r][\n]"
+[DEBUG] 2025-08-30 17:20:13.536 [] DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2025-08-30 17:20:13.537 [] headers - << HTTP/1.1 200 OK
+[DEBUG] 2025-08-30 17:20:13.537 [] headers - << Date: Sat, 30 Aug 2025 14:20:09 GMT
+[DEBUG] 2025-08-30 17:20:13.537 [] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2025-08-30 17:20:13.537 [] headers - << Cache-Control: public, max-age=60, s-maxage=60
+[DEBUG] 2025-08-30 17:20:13.538 [] headers - << Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+[DEBUG] 2025-08-30 17:20:13.538 [] headers - << ETag: W/"77b58ee584e127b2cb25e85d0181607eecfc9bfb9bd47b7599e261fcc67f0392"
+[DEBUG] 2025-08-30 17:20:13.538 [] headers - << Last-Modified: Sat, 23 Aug 2025 04:43:44 GMT
+[DEBUG] 2025-08-30 17:20:13.538 [] headers - << X-GitHub-Media-Type: github.v3; format=json
+[DEBUG] 2025-08-30 17:20:13.538 [] headers - << x-github-api-version-selected: 2022-11-28
+[DEBUG] 2025-08-30 17:20:13.538 [] headers - << Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+[DEBUG] 2025-08-30 17:20:13.538 [] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2025-08-30 17:20:13.538 [] headers - << Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+[DEBUG] 2025-08-30 17:20:13.539 [] headers - << X-Frame-Options: deny
+[DEBUG] 2025-08-30 17:20:13.539 [] headers - << X-Content-Type-Options: nosniff
+[DEBUG] 2025-08-30 17:20:13.539 [] headers - << X-XSS-Protection: 0
+[DEBUG] 2025-08-30 17:20:13.539 [] headers - << Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+[DEBUG] 2025-08-30 17:20:13.539 [] headers - << Content-Security-Policy: default-src 'none'
+[DEBUG] 2025-08-30 17:20:13.539 [] headers - << Content-Encoding: gzip
+[DEBUG] 2025-08-30 17:20:13.539 [] headers - << Server: github.com
+[DEBUG] 2025-08-30 17:20:13.540 [] headers - << Accept-Ranges: bytes
+[DEBUG] 2025-08-30 17:20:13.540 [] headers - << X-RateLimit-Limit: 60
+[DEBUG] 2025-08-30 17:20:13.540 [] headers - << X-RateLimit-Remaining: 54
+[DEBUG] 2025-08-30 17:20:13.540 [] headers - << X-RateLimit-Reset: 1756565081
+[DEBUG] 2025-08-30 17:20:13.541 [] headers - << X-RateLimit-Resource: core
+[DEBUG] 2025-08-30 17:20:13.541 [] headers - << X-RateLimit-Used: 6
+[DEBUG] 2025-08-30 17:20:13.542 [] headers - << Content-Length: 778
+[DEBUG] 2025-08-30 17:20:13.542 [] headers - << X-GitHub-Request-Id: A4E9:14D604:105BC7B:F296BA:68B30899
+[DEBUG] 2025-08-30 17:20:13.566 [] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2025-08-30 17:20:13.567 [] wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xad][0x95][\r]O[0xdb]0[0x10][0x86][0xff]J[0x14][0x84]&U%[0x9]i[0xda][0x95]H[0x88][0x1]-[0x1f]BP1:M[0x1a][0xa0][0xc8]I[0xdc][0xc4][0x9b]c[[0xb6][0xd3][0xae]T[0xfc][0xf7][0x9d][0xd3]P[0x95]h"
+[DEBUG] 2025-08-30 17:20:13.568 [] wire -  << "+hEH[0x15]u[0xed][0xe7][0xce][0xef][0x9d][0xdf][[0xd8][0xa5][0xa4]vh[0xe7]Z[0xb][0x15][0xba].[0x12][0xc4][0xc9][0x88][0xce][0xcb][0xd8]Ix[0xe1]J,[0xb8]r[0xef]r4[0xd1][0x17][0xb7][0xee][0xdd][0xc5][0xf1][0xd9]8[0x1a][0xde][0x9c]_[0xde][0xc][0xe1]'[0x8a][0x91][0xc2][0xca][0xf5][0x3][0xdf][0xf3][0xbc]n[0xaf]g[0xb7]m[0xa4][0x14][0xd6]*[0xfa]8[0xa6][0xbb]$[0x2][0xba][0x14][0x94][0xa3][0xb4][0x81]^.[0xaa][0xff]N[0xb9][0xc6]/[0x8e][0x18]*p[0x9b][0xa2][0x18][0xd3]g[0x88][0x95][0xeb][0x82]6"[0xad][0x89][0xb2]Y[0xe][0x8d]2[0xf7][0xc0][0xe9]8[0xbe][0xe7]w[0xbd][0xbe][0xdf][0x1][0x1c]I[0xed]p[0xa5][0x12][0x88]T[0xea][0x9c]K;\[0xd8][0x94]g[0x84][0x81][0xfa]K[0xf8][0x1e]J4[0xe1]L[0xdd][0xc7]\?[0xd6][0xc7][0x82][0xfd][0xfe]A[0xdf][0xef][0xfb]m[0x9b][0xf1][0x14]G[0x86]d_[0xf][0xae]{[0xb7][0xc5][0x81]w3[0x18][0x6][0xa3]q6[0x1f][\r].[0xf][0x8d][0xf6]S[0xa4][0x91]lj_-[0xbe][0x8]T*,[0x13][0xce]4f[0xba]*/a[0xee]~[0xb7][0xd3][0xeb][0x1f]M[0xf][0x3] d[0xb2]fTa[0x8c][0xe6][0x9b]z[0xc3][0xc0][0x94][0xfb]:[0xf5][0xdd][0xee][0x9]$[0xbf][0xdb][0x1d][0xbc])"[0x12][0xa2]y[0x18][0xce]L8[0xa5]|[0x6][0xdc][0xe6]5^[0xb7][0xe5][0xc6][0xd0][0xee][\n]"
+[DEBUG] 2025-08-30 17:20:13.569 [] wire -  << "[0xb2][0x2][0x12][0x96]m[0xf][0x4][0xc8][0xc2][0xe5]:[0xc7][0xa0]1\[0xdd][0xf4]IF[0xd4][[0xdd][0xbe]9[0xd5][\n]"
+[DEBUG] 2025-08-30 17:20:13.569 [] wire -  << "[0xb0][0x0][0x11][0x95][0x86][0xda][0x1a][0xa4][0x82]rI[0xdc][0xec][0xf3][0xc6][0xb3][0xdc][0xc][0xad][0x11][0x90][0xec][0x8c]A[0x9e][0x8b][0xea][0x15]W[0xec]2V[0x89]$[0xa2][0xea][0xb2]m[0x4]y[0x5][0x2]0[0x97][0x19]b[0xe4][0x9]m[\r][0x6][0x90][0x2]^e;[0xdb]$X[0x1][0x0][0x84][0xa7][0xd0][0xea][[0x91][0x96][0x84][0x85]+$[0x99][0xa2]dnd[0x94]8[0xc1]d[\n]"
+[DEBUG] 2025-08-30 17:20:13.569 [] wire -  << "5[0xda][0x9e][0xde]@[0x1]\[0xcf][0x5][0x86][0xc7]w[0xc2]5|1u[0x8e][0xa6][0x4][0xcf][0xa2]zY[0x94]1%[0x89])%[0xd1]8Bia[0xec]c[0x82][0xa8][0xc2][0xcf][0xeb][0xe][0xf1]u[0x18][0xfd][0x9a][\r]F[0xa7][0xe7]x[0xdc]S[0xc1]([0xbe][0xba][0xf2][\r][0x1a]e[0x91][0xf1]9[0xc0]7[0xc][\n]"
+[DEBUG] 2025-08-30 17:20:13.569 [] wire -  << "z.[0xc3]:[0x2]K([0x88]&*[0x87][0x1d][0x5][0x2]40[0xff][0xba]?[0x95]0[0x10][0xea][0xc0]`oEQj[0x14]S[0x0]W[0xa9][0xb4]m!q=[0x1e]VK[0x89][0xc4]H[0x83]f[0x8][0xce][0xd9][0xc6][0x1b][0xf7][0xbc][0xfe][0x9e][0xdf][0x19]{A[0x18]tB[0xdf][0xff]a[0xae]+[0xd2][\r]{[0x82][0xc0][0xec][0xa9][0x14]P[0xf9]?I[0xcb]][0xf5][0xd4][0x8][0xef][0x1f][0xcd][0xb5]e[0x8c]h[0xd3][0xcf][0xdf]?[0xe8][0xea][0xf3]MS"b+l}[0xbe][0x89][0x8d]y:[0x7][0x85]vv[0xac][0xef]9[0xd2][0x9f][0x94]u[0x9a]#[0x96][0xe1][0xf4][0x81][0xb5],U[\n]"
+[DEBUG] 2025-08-30 17:20:13.569 [] wire -  << "[0xc1][0xa5][0xb6]&\Z([0x83][0xce]&[0xc9]1[0xb1][\n]"
+[DEBUG] 2025-08-30 17:20:13.570 [] wire -  << "[0x18][0xc]V<[0xb7][0xbe]\[0xf3][0x1c][0xc5][0xf0]A[0xb0]E[0x98][0xf5]2[0xd1][0xdf][0x1a]\[0xa2][0xa4][0xd4][0xf5][0xbd][0xcf][0x81][0x89][0xf0][0xad][0xaa][0x80]u[0xbc][0x1c]D[0xce]O[0x98][0x7][0xd6][0x84][0xfc][0x6][0xeb][0xb3][0xc0]9[0xc0][0x9c][0xcd]&|[0xc1]cB[0xb1]UO[0xac][0xf][0x8][0xdf]5[0xe1][0xd7][0xdb][0xf2][0x3][0x98][0xbd][0x7]f[0xfe]Z[0xad]3[0xb8]c-$[0x8c][0xdc]V+|[0xb7]:[0xf0]$[0x4][0x92]x[0xbd]J[0xbe][0xe3]8[0x8d][0xf7]S[0x98]Z[0x18]OMx[0xc9][0xa0][0xc1][0xf7][0x9f][0xff][0x0][0xcb][0xd9]4[0x12]X[0x9][0x0][0x0]"
+[DEBUG] 2025-08-30 17:20:13.570 [] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[DEBUG] 2025-08-30 17:20:13.994 [] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@610169f6
+[DEBUG] 2025-08-30 17:20:13.995 [] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2025-08-30 17:20:15.965 [] ReportManager - Loaded OpenCV "opencv_java490".
+[WARN ] 2025-08-30 17:20:16.199 [main] ReportManager - Aug 30, 2025 5:20:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[WARN ] 2025-08-30 17:20:16.199 [main] ReportManager - WARNING: Unable to find CDP implementation matching 139
+[WARN ] 2025-08-30 17:20:16.201 [main] ReportManager - Aug 30, 2025 5:20:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+[WARN ] 2025-08-30 17:20:16.202 [main] ReportManager - WARNING: Unable to find version of CDP to use for 139.0.7258.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[INFO ] 2025-08-30 17:20:16.209 [main] ReportManager - Successfully Opened: "Windows | Chrome".
+[ERROR] 2025-08-30 17:20:16.216 [main] AllureLifecycle - Could not start step: no test case running
+[ERROR] 2025-08-30 17:20:16.222 [main] AllureLifecycle - Could not stop step: step with uuid ab97964e-6db2-4586-9c29-e694a48186b3 not found
+[DEBUG] 2025-08-30 17:20:17.263 [Finalizer] DefaultClientConnection - Connection 0.0.0.0:49933<->140.82.121.5:443 closed
+[WARN ] 2025-08-30 17:20:17.411 [] ReportManager - 
 [1;33m------------------------------------------------------------------------------------------------------------------------------------------------
                                           ⚠️ You're using an outdated engine version "8.4.20241024" ⚠️                                          
-                                 Kindly upgrade to the latest one "9.2.20250530" to ensure the best experience.                                 
+                                 Kindly upgrade to the latest one "9.3.20250823" to ensure the best experience.                                 
                            For more information click here: https://github.com/ShaftHQ/SHAFT_ENGINE/releases/latest .                           
 ------------------------------------------------------------------------------------------------------------------------------------------------
 [0m
-[INFO ] 2025-07-05 00:13:18.298 [main] ReportManager - Target URL: "https://lawyer.algorithms.ws"
-[INFO ] 2025-07-05 00:13:18.329 [main] ReportManager - Initial URL: "about:blank"
-[INFO ] 2025-07-05 00:13:19.526 [main] ReportManager - Navigate to url "https://lawyer.algorithms.ws".
-[ERROR] 2025-07-05 00:13:19.527 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:19.527 [main] AllureLifecycle - Could not stop step: step with uuid 81d9eb3c-5c26-4d1b-8459-fd604b54c5e2 not found
-[INFO ] 2025-07-05 00:13:19.539 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:13:19.539 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:13:19.541 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[DEBUG] 2025-07-05 00:13:20.342 [Finalizer] DefaultClientConnection - Connection 0.0.0.0:55142<->140.82.121.5:443 closed
-[ERROR] 2025-07-05 00:13:20.517 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:20.517 [main] ReportManager - Type "البريد الإلكتروني"
-[ERROR] 2025-07-05 00:13:20.674 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:20.675 [main] ReportManager - Type "By.xpath: //input[@name='password']"
-[ERROR] 2025-07-05 00:13:20.791 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:20.791 [main] ReportManager - Click "تسجيل الدخول"
-[ERROR] 2025-07-05 00:13:22.750 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:22.751 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:13:22.846 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:22.846 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:13:22.998 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:23.000 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[1]/a[1]/span[2]"
-[ERROR] 2025-07-05 00:13:23.176 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:23.177 [main] ReportManager - Click " نوع قضية جديد"
-[ERROR] 2025-07-05 00:13:23.683 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:23.684 [main] ReportManager - Type "اكتب العنوان"
-[ERROR] 2025-07-05 00:13:23.820 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:23.821 [main] ReportManager - Click "By.xpath: //body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[2]/div[1]/div[1]/div[1]/div[2]"
-[ERROR] 2025-07-05 00:13:25.419 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:25.419 [main] ReportManager - Click "- اختر الكل -"
-[ERROR] 2025-07-05 00:13:25.504 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:25.504 [main] ReportManager - Click "حفظ"
-[INFO ] 2025-07-05 00:13:26.068 [main] ReportManager - Get text "تم إضافة نوع القضية بنجاح" from "By.xpath: //div[contains(text(),'تم إضافة نوع القضية بنجاح')]".
-[ERROR] 2025-07-05 00:13:26.069 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:26.069 [main] AllureLifecycle - Could not stop step: step with uuid 9b122fcc-b36a-4511-a626-f7d7fb52aa23 not found
-[ERROR] 2025-07-05 00:13:27.732 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:27.733 [main] ReportManager - Type "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]"
-[ERROR] 2025-07-05 00:13:27.835 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:27.835 [main] ReportManager - Click ""
-[ERROR] 2025-07-05 00:13:27.902 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:27.902 [main] ReportManager - Click "نعم, قم بالحذف !"
-[WARN ] 2025-07-05 00:13:28.045 [main] ReportManager - Jul 05, 2025 12:13:28 AM org.openqa.selenium.remote.http.jdk.JdkHttpClient close
-[WARN ] 2025-07-05 00:13:28.045 [main] ReportManager - WARNING: failed to close the websocket: org.openqa.selenium.remote.http.jdk.JdkHttpClient$4@dde6f87
-[WARN ] 2025-07-05 00:13:28.046 [main] ReportManager - org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
-[WARN ] 2025-07-05 00:13:28.046 [main] ReportManager - Build info: version: '4.25.0', revision: '8a8aea2337'
-[WARN ] 2025-07-05 00:13:28.046 [main] ReportManager - System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-[WARN ] 2025-07-05 00:13:28.046 [main] ReportManager - Driver info: driver.version: SHAFT$GUI$WebDriver
-[WARN ] 2025-07-05 00:13:28.046 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:320)
-[WARN ] 2025-07-05 00:13:28.047 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.close(JdkHttpClient.java:339)
-[WARN ] 2025-07-05 00:13:28.047 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.close(JdkHttpClient.java:478)
-[WARN ] 2025-07-05 00:13:28.047 [main] ReportManager - 	at org.openqa.selenium.bidi.Connection.close(Connection.java:267)
-[WARN ] 2025-07-05 00:13:28.047 [main] ReportManager - 	at org.openqa.selenium.bidi.BiDi.close(BiDi.java:41)
-[WARN ] 2025-07-05 00:13:28.047 [main] ReportManager - 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
-[WARN ] 2025-07-05 00:13:28.048 [main] ReportManager - 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:426)
-[WARN ] 2025-07-05 00:13:28.048 [main] ReportManager - 	at com.shaft.driver.internal.DriverFactory.DriverFactoryHelper.closeDriver(DriverFactoryHelper.java:268)
-[WARN ] 2025-07-05 00:13:28.048 [main] ReportManager - 	at com.shaft.driver.internal.DriverFactory.DriverFactoryHelper.closeDriver(DriverFactoryHelper.java:250)
-[WARN ] 2025-07-05 00:13:28.048 [main] ReportManager - 	at com.shaft.driver.SHAFT$GUI$WebDriver.quit(SHAFT.java:58)
-[WARN ] 2025-07-05 00:13:28.048 [main] ReportManager - 	at pages.CommonPages.DriverManager.closeDriver(DriverManager.java:31)
-[WARN ] 2025-07-05 00:13:28.048 [main] ReportManager - 	at CucumberSteps.TestHooks.tearDown(TestHooks.java:59)
-[WARN ] 2025-07-05 00:13:28.049 [main] ReportManager - 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[WARN ] 2025-07-05 00:13:28.049 [main] ReportManager - 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-[WARN ] 2025-07-05 00:13:28.049 [main] ReportManager - 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-[WARN ] 2025-07-05 00:13:28.049 [main] ReportManager - 	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-[WARN ] 2025-07-05 00:13:28.049 [main] ReportManager - 	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-[WARN ] 2025-07-05 00:13:28.049 [main] ReportManager - 	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-[WARN ] 2025-07-05 00:13:28.050 [main] ReportManager - 	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
-[WARN ] 2025-07-05 00:13:28.050 [main] ReportManager - 	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-[WARN ] 2025-07-05 00:13:28.050 [main] ReportManager - 	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-[WARN ] 2025-07-05 00:13:28.050 [main] ReportManager - 	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-[WARN ] 2025-07-05 00:13:28.050 [main] ReportManager - 	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-[WARN ] 2025-07-05 00:13:28.051 [main] ReportManager - 	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-[WARN ] 2025-07-05 00:13:28.051 [main] ReportManager - 	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-[WARN ] 2025-07-05 00:13:28.051 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107)
-[WARN ] 2025-07-05 00:13:28.051 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-[WARN ] 2025-07-05 00:13:28.051 [main] ReportManager - 	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-[WARN ] 2025-07-05 00:13:28.052 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-[WARN ] 2025-07-05 00:13:28.052 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107)
-[WARN ] 2025-07-05 00:13:28.052 [main] ReportManager - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-[WARN ] 2025-07-05 00:13:28.052 [main] ReportManager - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-[WARN ] 2025-07-05 00:13:28.052 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235)
-[WARN ] 2025-07-05 00:13:28.053 [main] ReportManager - 	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:124)
-[WARN ] 2025-07-05 00:13:28.053 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89)
-[WARN ] 2025-07-05 00:13:28.055 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
-[WARN ] 2025-07-05 00:13:28.055 [main] ReportManager - 	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200)
-[WARN ] 2025-07-05 00:13:28.055 [main] ReportManager - 	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1686)
-[WARN ] 2025-07-05 00:13:28.056 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:147)
-[WARN ] 2025-07-05 00:13:28.056 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:588)
-[WARN ] 2025-07-05 00:13:28.056 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:574)
-[WARN ] 2025-07-05 00:13:28.056 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
-[WARN ] 2025-07-05 00:13:28.056 [main] ReportManager - 	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-[WARN ] 2025-07-05 00:13:28.056 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
-[WARN ] 2025-07-05 00:13:28.057 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)
-[WARN ] 2025-07-05 00:13:28.057 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90)
-[WARN ] 2025-07-05 00:13:28.057 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78)
-[WARN ] 2025-07-05 00:13:28.057 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-[WARN ] 2025-07-05 00:13:28.059 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-[WARN ] 2025-07-05 00:13:28.060 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-[WARN ] 2025-07-05 00:13:28.060 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
-[WARN ] 2025-07-05 00:13:28.060 [main] ReportManager - 	at io.cucumber.core.cli.Main.run(Main.java:87)
-[WARN ] 2025-07-05 00:13:28.060 [main] ReportManager - 	at io.cucumber.core.cli.Main.main(Main.java:30)
-[WARN ] 2025-07-05 00:13:28.060 [main] ReportManager - Caused by: java.io.IOException: Output closed
-[WARN ] 2025-07-05 00:13:28.061 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose(WebSocketImpl.java:313)
-[WARN ] 2025-07-05 00:13:28.061 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.lambda$send$2(JdkHttpClient.java:285)
-[WARN ] 2025-07-05 00:13:28.061 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:310)
-[WARN ] 2025-07-05 00:13:28.061 [main] ReportManager - 	... 52 more
-[INFO ] 2025-07-05 00:13:28.266 [main] ReportManager - Successfully Closed Driver.
-[ERROR] 2025-07-05 00:13:28.267 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:28.268 [main] AllureLifecycle - Could not stop step: step with uuid 67bbf872-5ec4-40f2-8cbb-540f018b0309 not found
-[INFO ] 2025-07-05 00:13:28.312 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:13:28.312 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:13:28.314 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[INFO ] 2025-07-05 00:13:28.319 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
-[INFO ] 2025-07-05 00:13:28.323 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
-[INFO ] 2025-07-05 00:13:28.865 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
-[INFO ] 2025-07-05 00:13:28.866 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
-[INFO ] 2025-07-05 00:13:28.866 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
-[WARN ] 2025-07-05 00:13:31.346 [main] ReportManager - Jul 05, 2025 12:13:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-[WARN ] 2025-07-05 00:13:31.347 [main] ReportManager - WARNING: Unable to find CDP implementation matching 137
-[WARN ] 2025-07-05 00:13:31.347 [main] ReportManager - Jul 05, 2025 12:13:31 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-[WARN ] 2025-07-05 00:13:31.347 [main] ReportManager - WARNING: Unable to find version of CDP to use for 137.0.7151.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[INFO ] 2025-07-05 00:13:31.348 [main] ReportManager - Successfully Opened: "Windows | Chrome".
-[ERROR] 2025-07-05 00:13:31.348 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:31.349 [main] AllureLifecycle - Could not stop step: step with uuid f9cdc8a3-eb52-49de-9644-3910f1a9823f not found
-[INFO ] 2025-07-05 00:13:31.449 [main] ReportManager - Target URL: "https://lawyer.algorithms.ws"
-[INFO ] 2025-07-05 00:13:31.474 [main] ReportManager - Initial URL: "about:blank"
-[INFO ] 2025-07-05 00:13:32.746 [main] ReportManager - Navigate to url "https://lawyer.algorithms.ws".
-[ERROR] 2025-07-05 00:13:32.747 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:32.747 [main] AllureLifecycle - Could not stop step: step with uuid ba20db7c-b5ef-4b1e-9108-d8c0ad555782 not found
-[INFO ] 2025-07-05 00:13:32.749 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:13:32.750 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:13:32.753 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[ERROR] 2025-07-05 00:13:33.825 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:33.825 [main] ReportManager - Type "البريد الإلكتروني"
-[ERROR] 2025-07-05 00:13:34.065 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:34.068 [main] ReportManager - Type "By.xpath: //input[@name='password']"
-[ERROR] 2025-07-05 00:13:34.200 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:34.201 [main] ReportManager - Click "تسجيل الدخول"
-[ERROR] 2025-07-05 00:13:35.993 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:35.994 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:13:36.109 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:36.111 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:13:36.349 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:36.350 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[1]/a[1]/span[2]"
-[ERROR] 2025-07-05 00:13:36.641 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:36.641 [main] ReportManager - Click " نوع قضية جديد"
-[ERROR] 2025-07-05 00:13:36.961 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:36.961 [main] ReportManager - Type "اكتب العنوان"
-[ERROR] 2025-07-05 00:13:37.141 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:37.141 [main] ReportManager - Click "By.xpath: //body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[2]/div[1]/div[1]/div[1]/div[2]"
-[ERROR] 2025-07-05 00:13:38.753 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:38.753 [main] ReportManager - Click "- اختر الكل -"
-[ERROR] 2025-07-05 00:13:38.824 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:38.824 [main] ReportManager - Click "حفظ"
-[INFO ] 2025-07-05 00:13:39.404 [main] ReportManager - Get text "تم إضافة نوع القضية بنجاح" from "By.xpath: //div[contains(text(),'تم إضافة نوع القضية بنجاح')]".
-[ERROR] 2025-07-05 00:13:39.404 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:39.404 [main] AllureLifecycle - Could not stop step: step with uuid a87b624e-6c12-4286-a6d0-d25e4f18ce51 not found
-[ERROR] 2025-07-05 00:13:41.032 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:41.032 [main] ReportManager - Type "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]"
-[ERROR] 2025-07-05 00:13:42.684 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:42.684 [main] ReportManager - Click ""
-[INFO ] 2025-07-05 00:13:42.753 [main] ReportManager - Clear "اكتب العنوان".
-[ERROR] 2025-07-05 00:13:42.753 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:42.753 [main] AllureLifecycle - Could not stop step: step with uuid f0bdaaeb-c57d-4e39-a662-dcdf95e6821e not found
-[ERROR] 2025-07-05 00:13:44.886 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:44.887 [main] ReportManager - Type "اكتب العنوان"
-[ERROR] 2025-07-05 00:13:44.947 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:44.947 [main] ReportManager - Click "حفظ"
-[INFO ] 2025-07-05 00:13:45.572 [main] ReportManager - Get text "تم تعديل نوع القضية بنجاح" from "By.xpath: //div[contains(text(),'تم تعديل نوع القضية بنجاح')]".
-[ERROR] 2025-07-05 00:13:45.572 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:45.572 [main] AllureLifecycle - Could not stop step: step with uuid 28f88684-98c3-47cc-8beb-5ef4dc28dc7c not found
-[ERROR] 2025-07-05 00:13:45.645 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:45.645 [main] ReportManager - Click ""
-[ERROR] 2025-07-05 00:13:45.712 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:45.712 [main] ReportManager - Click "نعم, قم بالحذف !"
-[INFO ] 2025-07-05 00:13:46.145 [main] ReportManager - Successfully Closed Driver.
-[ERROR] 2025-07-05 00:13:46.145 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:46.145 [main] AllureLifecycle - Could not stop step: step with uuid b2f0bb3c-ee60-4675-acae-e9cc2531ac56 not found
-[INFO ] 2025-07-05 00:13:46.158 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:13:46.158 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:13:46.161 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[INFO ] 2025-07-05 00:13:46.164 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
-[INFO ] 2025-07-05 00:13:46.167 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
-[INFO ] 2025-07-05 00:13:46.684 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
-[INFO ] 2025-07-05 00:13:46.685 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
-[INFO ] 2025-07-05 00:13:46.685 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
-[WARN ] 2025-07-05 00:13:48.558 [main] ReportManager - Jul 05, 2025 12:13:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-[WARN ] 2025-07-05 00:13:48.558 [main] ReportManager - WARNING: Unable to find CDP implementation matching 137
-[WARN ] 2025-07-05 00:13:48.560 [main] ReportManager - Jul 05, 2025 12:13:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-[WARN ] 2025-07-05 00:13:48.560 [main] ReportManager - WARNING: Unable to find version of CDP to use for 137.0.7151.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[INFO ] 2025-07-05 00:13:48.561 [main] ReportManager - Successfully Opened: "Windows | Chrome".
-[ERROR] 2025-07-05 00:13:48.562 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:48.562 [main] AllureLifecycle - Could not stop step: step with uuid b618ac82-fff1-4262-aafd-2ec2961a1abd not found
-[INFO ] 2025-07-05 00:13:48.622 [main] ReportManager - Target URL: "https://lawyer.algorithms.ws"
-[INFO ] 2025-07-05 00:13:48.643 [main] ReportManager - Initial URL: "about:blank"
-[INFO ] 2025-07-05 00:13:49.817 [main] ReportManager - Navigate to url "https://lawyer.algorithms.ws".
-[ERROR] 2025-07-05 00:13:49.819 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:49.819 [main] AllureLifecycle - Could not stop step: step with uuid 665e324f-4ce6-481f-84d0-5232ffbdc5ce not found
-[INFO ] 2025-07-05 00:13:49.821 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:13:49.821 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:13:49.823 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[ERROR] 2025-07-05 00:13:50.717 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:50.718 [main] ReportManager - Type "البريد الإلكتروني"
-[ERROR] 2025-07-05 00:13:50.922 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:50.923 [main] ReportManager - Type "By.xpath: //input[@name='password']"
-[ERROR] 2025-07-05 00:13:51.063 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:51.064 [main] ReportManager - Click "تسجيل الدخول"
-[ERROR] 2025-07-05 00:13:52.941 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:52.941 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:13:53.080 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:53.080 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:13:53.302 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:53.303 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[1]/a[1]/span[2]"
-[ERROR] 2025-07-05 00:13:53.511 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:53.512 [main] ReportManager - Click " نوع قضية جديد"
-[ERROR] 2025-07-05 00:13:53.856 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:53.857 [main] ReportManager - Type "اكتب العنوان"
-[ERROR] 2025-07-05 00:13:54.004 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:54.005 [main] ReportManager - Click "By.xpath: //body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[2]/div[1]/div[1]/div[1]/div[2]"
-[ERROR] 2025-07-05 00:13:55.597 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:55.597 [main] ReportManager - Click "- اختر الكل -"
-[ERROR] 2025-07-05 00:13:55.682 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:55.682 [main] ReportManager - Click "حفظ"
-[INFO ] 2025-07-05 00:13:56.120 [main] ReportManager - Get text "تم إضافة نوع القضية بنجاح" from "By.xpath: //div[contains(text(),'تم إضافة نوع القضية بنجاح')]".
-[ERROR] 2025-07-05 00:13:56.120 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:56.121 [main] AllureLifecycle - Could not stop step: step with uuid 71a7e939-0bad-4e14-9b1c-22b8447c444d not found
-[ERROR] 2025-07-05 00:13:57.718 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:57.718 [main] ReportManager - Type "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]"
-[ERROR] 2025-07-05 00:13:57.844 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:57.844 [main] ReportManager - Click ""
-[ERROR] 2025-07-05 00:13:57.939 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:13:57.939 [main] ReportManager - Click "نعم, قم بالحذف !"
-[INFO ] 2025-07-05 00:13:58.978 [main] ReportManager - Get text "تم حذف نوع القضية بنجاح" from "By.xpath: //div[contains(text(),'تم حذف نوع القضية بنجاح')]".
-[ERROR] 2025-07-05 00:13:58.980 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:58.980 [main] AllureLifecycle - Could not stop step: step with uuid dfb753a7-4c7b-4ac1-a9bb-e2f64b835512 not found
-[INFO ] 2025-07-05 00:13:59.414 [main] ReportManager - Successfully Closed Driver.
-[ERROR] 2025-07-05 00:13:59.414 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:13:59.415 [main] AllureLifecycle - Could not stop step: step with uuid 47510cfe-de51-4bdc-ae44-207c40f705d9 not found
-[INFO ] 2025-07-05 00:13:59.453 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:13:59.469 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:13:59.473 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[INFO ] 2025-07-05 00:13:59.480 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
-[INFO ] 2025-07-05 00:13:59.509 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
-[INFO ] 2025-07-05 00:14:00.025 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
-[INFO ] 2025-07-05 00:14:00.027 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
-[INFO ] 2025-07-05 00:14:00.027 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
-[WARN ] 2025-07-05 00:14:02.976 [main] ReportManager - Jul 05, 2025 12:14:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-[WARN ] 2025-07-05 00:14:02.976 [main] ReportManager - WARNING: Unable to find CDP implementation matching 137
-[WARN ] 2025-07-05 00:14:02.977 [main] ReportManager - Jul 05, 2025 12:14:02 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-[WARN ] 2025-07-05 00:14:02.978 [main] ReportManager - WARNING: Unable to find version of CDP to use for 137.0.7151.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[INFO ] 2025-07-05 00:14:02.979 [main] ReportManager - Successfully Opened: "Windows | Chrome".
-[ERROR] 2025-07-05 00:14:02.979 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:02.979 [main] AllureLifecycle - Could not stop step: step with uuid 2eeee208-f450-490f-8930-dc176ce7cfb9 not found
-[INFO ] 2025-07-05 00:14:03.059 [main] ReportManager - Target URL: "https://lawyer.algorithms.ws"
-[INFO ] 2025-07-05 00:14:03.086 [main] ReportManager - Initial URL: "about:blank"
-[INFO ] 2025-07-05 00:14:04.235 [main] ReportManager - Navigate to url "https://lawyer.algorithms.ws".
-[ERROR] 2025-07-05 00:14:04.236 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:04.236 [main] AllureLifecycle - Could not stop step: step with uuid 971d1b7e-68c3-4e1a-a9ef-19e3384b972b not found
-[INFO ] 2025-07-05 00:14:04.237 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:04.237 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:04.240 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[ERROR] 2025-07-05 00:14:05.249 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:05.250 [main] ReportManager - Type "البريد الإلكتروني"
-[ERROR] 2025-07-05 00:14:05.460 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:05.461 [main] ReportManager - Type "By.xpath: //input[@name='password']"
-[ERROR] 2025-07-05 00:14:05.587 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:05.588 [main] ReportManager - Click "تسجيل الدخول"
-[ERROR] 2025-07-05 00:14:07.350 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:07.350 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:07.496 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:07.496 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:07.708 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:07.708 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[2]/a[1]/span[2]"
-[ERROR] 2025-07-05 00:14:08.609 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:08.609 [main] ReportManager - Click " نموذج قضية جديد"
-[ERROR] 2025-07-05 00:14:09.107 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:09.107 [main] ReportManager - Type "اكتب العنوان"
-[ERROR] 2025-07-05 00:14:09.293 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:09.293 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[3]/div[1]/div[2]/button[1]/i[1]"
-[ERROR] 2025-07-05 00:14:09.427 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:09.427 [main] ReportManager - Click "حقل نص"
-[ERROR] 2025-07-05 00:14:09.638 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:09.639 [main] ReportManager - Type "أدخل مسمى"
-[ERROR] 2025-07-05 00:14:09.777 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:09.778 [main] ReportManager - Type "By.xpath: /html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[3]/div[2]/div[1]/div[1]/input[1]"
-[ERROR] 2025-07-05 00:14:09.884 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:09.886 [main] ReportManager - Click "حفظ"
-[INFO ] 2025-07-05 00:14:10.378 [main] ReportManager - Get text "تم إضافة النموذج بنجاح" from "By.xpath: //div[contains(text(),'تم إضافة النموذج بنجاح')]".
-[ERROR] 2025-07-05 00:14:10.378 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:10.378 [main] AllureLifecycle - Could not stop step: step with uuid 2f72671a-4ba1-4649-957c-c7571ab8be10 not found
-[ERROR] 2025-07-05 00:14:10.550 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:10.550 [main] ReportManager - Click ""
-[ERROR] 2025-07-05 00:14:10.648 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:10.649 [main] ReportManager - Click "نعم, قم بالحذف !"
-[INFO ] 2025-07-05 00:14:11.114 [main] ReportManager - Successfully Closed Driver.
-[ERROR] 2025-07-05 00:14:11.114 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:11.114 [main] AllureLifecycle - Could not stop step: step with uuid 6ab42437-169d-487f-a49c-dfd8d3e9d6fd not found
-[INFO ] 2025-07-05 00:14:11.126 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:11.127 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:11.130 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[INFO ] 2025-07-05 00:14:11.133 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
-[INFO ] 2025-07-05 00:14:11.137 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
-[INFO ] 2025-07-05 00:14:11.642 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
-[INFO ] 2025-07-05 00:14:11.643 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
-[INFO ] 2025-07-05 00:14:11.644 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
-[WARN ] 2025-07-05 00:14:14.075 [main] ReportManager - Jul 05, 2025 12:14:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-[WARN ] 2025-07-05 00:14:14.076 [main] ReportManager - WARNING: Unable to find CDP implementation matching 137
-[WARN ] 2025-07-05 00:14:14.078 [main] ReportManager - Jul 05, 2025 12:14:14 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-[WARN ] 2025-07-05 00:14:14.078 [main] ReportManager - WARNING: Unable to find version of CDP to use for 137.0.7151.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[INFO ] 2025-07-05 00:14:14.080 [main] ReportManager - Successfully Opened: "Windows | Chrome".
-[ERROR] 2025-07-05 00:14:14.080 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:14.080 [main] AllureLifecycle - Could not stop step: step with uuid 0e741899-54b0-4c69-86c2-7a54c063ff62 not found
-[INFO ] 2025-07-05 00:14:14.156 [main] ReportManager - Target URL: "https://lawyer.algorithms.ws"
-[INFO ] 2025-07-05 00:14:14.178 [main] ReportManager - Initial URL: "about:blank"
-[INFO ] 2025-07-05 00:14:15.472 [main] ReportManager - Navigate to url "https://lawyer.algorithms.ws".
-[ERROR] 2025-07-05 00:14:15.472 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:15.473 [main] AllureLifecycle - Could not stop step: step with uuid 2b839822-c4eb-4b7c-8f69-4e0178c52a74 not found
-[INFO ] 2025-07-05 00:14:15.474 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:15.475 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:15.478 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[ERROR] 2025-07-05 00:14:16.434 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:16.434 [main] ReportManager - Type "البريد الإلكتروني"
-[ERROR] 2025-07-05 00:14:16.611 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:16.611 [main] ReportManager - Type "By.xpath: //input[@name='password']"
-[ERROR] 2025-07-05 00:14:16.729 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:16.729 [main] ReportManager - Click "تسجيل الدخول"
-[ERROR] 2025-07-05 00:14:18.625 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:18.626 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:18.722 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:18.723 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:18.912 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:18.914 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[2]/a[1]/span[2]"
-[ERROR] 2025-07-05 00:14:19.876 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:19.877 [main] ReportManager - Click " نموذج قضية جديد"
-[ERROR] 2025-07-05 00:14:20.166 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:20.167 [main] ReportManager - Type "اكتب العنوان"
-[ERROR] 2025-07-05 00:14:20.327 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:20.327 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[3]/div[1]/div[2]/button[1]/i[1]"
-[ERROR] 2025-07-05 00:14:20.445 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:20.446 [main] ReportManager - Click "حقل نص"
-[ERROR] 2025-07-05 00:14:20.644 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:20.645 [main] ReportManager - Type "أدخل مسمى"
-[ERROR] 2025-07-05 00:14:20.785 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:20.786 [main] ReportManager - Type "By.xpath: /html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[3]/div[2]/div[1]/div[1]/input[1]"
-[ERROR] 2025-07-05 00:14:20.894 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:20.894 [main] ReportManager - Click "حفظ"
-[ERROR] 2025-07-05 00:14:21.604 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:21.605 [main] ReportManager - Click ""
-[INFO ] 2025-07-05 00:14:21.705 [main] ReportManager - Clear "اكتب العنوان".
-[ERROR] 2025-07-05 00:14:21.706 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:21.706 [main] AllureLifecycle - Could not stop step: step with uuid 3d9a6512-a5b4-4935-9b56-55ac5c96fa8f not found
-[ERROR] 2025-07-05 00:14:23.821 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:23.821 [main] ReportManager - Type "اكتب العنوان"
-[ERROR] 2025-07-05 00:14:23.885 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:23.885 [main] ReportManager - Click "حفظ"
-[INFO ] 2025-07-05 00:14:24.478 [main] ReportManager - Get text "تم تعديل النموذج بنجاح" from "By.xpath: //div[contains(text(),'تم تعديل النموذج بنجاح')]".
-[ERROR] 2025-07-05 00:14:24.478 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:24.478 [main] AllureLifecycle - Could not stop step: step with uuid 3c876cb0-1fc3-4244-ba6d-8a7743d1a978 not found
-[WARN ] 2025-07-05 00:14:24.747 [main] ReportManager - Jul 05, 2025 12:14:24 AM org.openqa.selenium.remote.http.jdk.JdkHttpClient close
-[WARN ] 2025-07-05 00:14:24.747 [main] ReportManager - WARNING: failed to close the websocket: org.openqa.selenium.remote.http.jdk.JdkHttpClient$4@af57949
-[WARN ] 2025-07-05 00:14:24.747 [main] ReportManager - org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
-[WARN ] 2025-07-05 00:14:24.747 [main] ReportManager - Build info: version: '4.25.0', revision: '8a8aea2337'
-[WARN ] 2025-07-05 00:14:24.747 [main] ReportManager - System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-[WARN ] 2025-07-05 00:14:24.747 [main] ReportManager - Driver info: driver.version: SHAFT$GUI$WebDriver
-[WARN ] 2025-07-05 00:14:24.747 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:320)
-[WARN ] 2025-07-05 00:14:24.747 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.close(JdkHttpClient.java:339)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.close(JdkHttpClient.java:478)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at org.openqa.selenium.bidi.Connection.close(Connection.java:267)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at org.openqa.selenium.bidi.BiDi.close(BiDi.java:41)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:426)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at com.shaft.driver.internal.DriverFactory.DriverFactoryHelper.closeDriver(DriverFactoryHelper.java:268)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at com.shaft.driver.internal.DriverFactory.DriverFactoryHelper.closeDriver(DriverFactoryHelper.java:250)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at com.shaft.driver.SHAFT$GUI$WebDriver.quit(SHAFT.java:58)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at pages.CommonPages.DriverManager.closeDriver(DriverManager.java:31)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at CucumberSteps.TestHooks.tearDown(TestHooks.java:59)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-[WARN ] 2025-07-05 00:14:24.748 [main] ReportManager - 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-[WARN ] 2025-07-05 00:14:24.749 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:124)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1686)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:147)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:588)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:574)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)
-[WARN ] 2025-07-05 00:14:24.751 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at io.cucumber.core.cli.Main.run(Main.java:87)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at io.cucumber.core.cli.Main.main(Main.java:30)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - Caused by: java.io.IOException: Output closed
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose(WebSocketImpl.java:313)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.lambda$send$2(JdkHttpClient.java:285)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:310)
-[WARN ] 2025-07-05 00:14:24.752 [main] ReportManager - 	... 52 more
-[INFO ] 2025-07-05 00:14:24.884 [main] ReportManager - Successfully Closed Driver.
-[ERROR] 2025-07-05 00:14:24.884 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:24.884 [main] AllureLifecycle - Could not stop step: step with uuid 07a1d15f-9414-49ba-94ee-dc25bcbf41ac not found
-[INFO ] 2025-07-05 00:14:24.889 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:24.889 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:24.890 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[INFO ] 2025-07-05 00:14:24.893 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
-[INFO ] 2025-07-05 00:14:24.895 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
-[INFO ] 2025-07-05 00:14:25.402 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
-[INFO ] 2025-07-05 00:14:25.402 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
-[INFO ] 2025-07-05 00:14:25.403 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
-[WARN ] 2025-07-05 00:14:27.810 [main] ReportManager - Jul 05, 2025 12:14:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-[WARN ] 2025-07-05 00:14:27.811 [main] ReportManager - WARNING: Unable to find CDP implementation matching 137
-[WARN ] 2025-07-05 00:14:27.811 [main] ReportManager - Jul 05, 2025 12:14:27 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-[WARN ] 2025-07-05 00:14:27.811 [main] ReportManager - WARNING: Unable to find version of CDP to use for 137.0.7151.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[INFO ] 2025-07-05 00:14:27.812 [main] ReportManager - Successfully Opened: "Windows | Chrome".
-[ERROR] 2025-07-05 00:14:27.812 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:27.812 [main] AllureLifecycle - Could not stop step: step with uuid 28e968b1-af66-42cd-87ed-553e621d69e8 not found
-[INFO ] 2025-07-05 00:14:27.891 [main] ReportManager - Target URL: "https://lawyer.algorithms.ws"
-[INFO ] 2025-07-05 00:14:27.912 [main] ReportManager - Initial URL: "about:blank"
-[INFO ] 2025-07-05 00:14:29.205 [main] ReportManager - Navigate to url "https://lawyer.algorithms.ws".
-[ERROR] 2025-07-05 00:14:29.205 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:29.205 [main] AllureLifecycle - Could not stop step: step with uuid 02c0b057-c20d-48ba-b1fc-427b000b41d8 not found
-[INFO ] 2025-07-05 00:14:29.207 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:29.208 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:29.209 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[ERROR] 2025-07-05 00:14:30.146 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:30.146 [main] ReportManager - Type "البريد الإلكتروني"
-[ERROR] 2025-07-05 00:14:30.351 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:30.352 [main] ReportManager - Type "By.xpath: //input[@name='password']"
-[ERROR] 2025-07-05 00:14:30.483 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:30.484 [main] ReportManager - Click "تسجيل الدخول"
-[ERROR] 2025-07-05 00:14:32.293 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:32.294 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:32.426 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:32.426 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:32.632 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:32.633 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[2]/a[1]/span[2]"
-[ERROR] 2025-07-05 00:14:33.514 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:33.514 [main] ReportManager - Click " نموذج قضية جديد"
-[ERROR] 2025-07-05 00:14:33.858 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:33.859 [main] ReportManager - Type "اكتب العنوان"
-[ERROR] 2025-07-05 00:14:34.007 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:34.008 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[3]/div[1]/div[2]/button[1]/i[1]"
-[ERROR] 2025-07-05 00:14:34.128 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:34.128 [main] ReportManager - Click "حقل نص"
-[ERROR] 2025-07-05 00:14:34.339 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:34.339 [main] ReportManager - Type "أدخل مسمى"
-[ERROR] 2025-07-05 00:14:34.471 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:34.472 [main] ReportManager - Type "By.xpath: /html[1]/body[1]/div[5]/div[1]/div[1]/div[2]/form[1]/fieldset[1]/div[3]/div[2]/div[1]/div[1]/input[1]"
-[ERROR] 2025-07-05 00:14:34.565 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:34.565 [main] ReportManager - Click "حفظ"
-[ERROR] 2025-07-05 00:14:35.245 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:35.245 [main] ReportManager - Click ""
-[ERROR] 2025-07-05 00:14:35.326 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:35.326 [main] ReportManager - Click "نعم, قم بالحذف !"
-[INFO ] 2025-07-05 00:14:35.802 [main] ReportManager - Get text "تم حذف النموذج بنجاح" from "By.xpath: //div[contains(text(),'تم حذف النموذج بنجاح')]".
-[ERROR] 2025-07-05 00:14:35.802 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:35.802 [main] AllureLifecycle - Could not stop step: step with uuid 73b6fd18-34cf-4ac7-b401-513a83d6d2ed not found
-[WARN ] 2025-07-05 00:14:36.084 [main] ReportManager - Jul 05, 2025 12:14:36 AM org.openqa.selenium.remote.http.jdk.JdkHttpClient close
-[WARN ] 2025-07-05 00:14:36.084 [main] ReportManager - WARNING: failed to close the websocket: org.openqa.selenium.remote.http.jdk.JdkHttpClient$4@c19bb2a
-[WARN ] 2025-07-05 00:14:36.084 [main] ReportManager - org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - Build info: version: '4.25.0', revision: '8a8aea2337'
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - Driver info: driver.version: SHAFT$GUI$WebDriver
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:320)
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.close(JdkHttpClient.java:339)
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.close(JdkHttpClient.java:478)
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - 	at org.openqa.selenium.bidi.Connection.close(Connection.java:267)
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - 	at org.openqa.selenium.bidi.BiDi.close(BiDi.java:41)
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:426)
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - 	at com.shaft.driver.internal.DriverFactory.DriverFactoryHelper.closeDriver(DriverFactoryHelper.java:268)
-[WARN ] 2025-07-05 00:14:36.085 [main] ReportManager - 	at com.shaft.driver.internal.DriverFactory.DriverFactoryHelper.closeDriver(DriverFactoryHelper.java:250)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at com.shaft.driver.SHAFT$GUI$WebDriver.quit(SHAFT.java:58)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at pages.CommonPages.DriverManager.closeDriver(DriverManager.java:31)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at CucumberSteps.TestHooks.tearDown(TestHooks.java:59)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
-[WARN ] 2025-07-05 00:14:36.086 [main] ReportManager - 	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-[WARN ] 2025-07-05 00:14:36.087 [main] ReportManager - 	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-[WARN ] 2025-07-05 00:14:36.087 [main] ReportManager - 	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-[WARN ] 2025-07-05 00:14:36.087 [main] ReportManager - 	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-[WARN ] 2025-07-05 00:14:36.087 [main] ReportManager - 	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-[WARN ] 2025-07-05 00:14:36.087 [main] ReportManager - 	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-[WARN ] 2025-07-05 00:14:36.087 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107)
-[WARN ] 2025-07-05 00:14:36.087 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-[WARN ] 2025-07-05 00:14:36.087 [main] ReportManager - 	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:124)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1686)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:147)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:588)
-[WARN ] 2025-07-05 00:14:36.088 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:574)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at io.cucumber.core.cli.Main.run(Main.java:87)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at io.cucumber.core.cli.Main.main(Main.java:30)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - Caused by: java.io.IOException: Output closed
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.MessageEncoder.encodeClose(MessageEncoder.java:330)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask$1.onClose(TransportImpl.java:422)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask$1.onClose(TransportImpl.java:367)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.MessageQueue.peek(MessageQueue.java:266)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask.run(TransportImpl.java:555)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-[WARN ] 2025-07-05 00:14:36.089 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.TransportImpl.sendClose(TransportImpl.java:271)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose0(WebSocketImpl.java:345)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendCloseSilently(WebSocketImpl.java:660)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl$ReceiveTask.lambda$processClose$0(WebSocketImpl.java:549)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:907)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.base/java.util.concurrent.CompletableFuture.uniWhenCompleteStage(CompletableFuture.java:931)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.base/java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:2401)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.base/java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:144)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl$ReceiveTask.processClose(WebSocketImpl.java:544)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl$ReceiveTask.run(WebSocketImpl.java:459)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-[WARN ] 2025-07-05 00:14:36.091 [main] ReportManager - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-[WARN ] 2025-07-05 00:14:36.092 [main] ReportManager - 	at java.base/java.lang.Thread.run(Thread.java:1575)
-[INFO ] 2025-07-05 00:14:36.246 [main] ReportManager - Successfully Closed Driver.
-[ERROR] 2025-07-05 00:14:36.246 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:36.248 [main] AllureLifecycle - Could not stop step: step with uuid d79bf165-b9d4-4653-82cc-e69f445a2279 not found
-[INFO ] 2025-07-05 00:14:36.254 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:36.255 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:36.256 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[INFO ] 2025-07-05 00:14:36.259 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
-[INFO ] 2025-07-05 00:14:36.263 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
-[INFO ] 2025-07-05 00:14:36.779 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
-[INFO ] 2025-07-05 00:14:36.780 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
-[INFO ] 2025-07-05 00:14:36.780 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
-[WARN ] 2025-07-05 00:14:39.227 [main] ReportManager - Jul 05, 2025 12:14:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-[WARN ] 2025-07-05 00:14:39.227 [main] ReportManager - WARNING: Unable to find CDP implementation matching 137
-[WARN ] 2025-07-05 00:14:39.228 [main] ReportManager - Jul 05, 2025 12:14:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-[WARN ] 2025-07-05 00:14:39.228 [main] ReportManager - WARNING: Unable to find version of CDP to use for 137.0.7151.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[INFO ] 2025-07-05 00:14:39.229 [main] ReportManager - Successfully Opened: "Windows | Chrome".
-[ERROR] 2025-07-05 00:14:39.229 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:39.229 [main] AllureLifecycle - Could not stop step: step with uuid 644698f8-dd36-455d-be8a-1f50262ee182 not found
-[INFO ] 2025-07-05 00:14:39.279 [main] ReportManager - Target URL: "https://lawyer.algorithms.ws"
-[INFO ] 2025-07-05 00:14:39.302 [main] ReportManager - Initial URL: "about:blank"
-[INFO ] 2025-07-05 00:14:40.329 [main] ReportManager - Navigate to url "https://lawyer.algorithms.ws".
-[ERROR] 2025-07-05 00:14:40.330 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:40.330 [main] AllureLifecycle - Could not stop step: step with uuid 5aa3a3b4-ca4d-4e4c-979e-0d9cdb8132a2 not found
-[INFO ] 2025-07-05 00:14:40.332 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:40.332 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:40.335 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[ERROR] 2025-07-05 00:14:41.319 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:41.320 [main] ReportManager - Type "البريد الإلكتروني"
-[ERROR] 2025-07-05 00:14:41.500 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:41.501 [main] ReportManager - Type "By.xpath: //input[@name='password']"
-[ERROR] 2025-07-05 00:14:41.636 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:41.637 [main] ReportManager - Click "تسجيل الدخول"
-[ERROR] 2025-07-05 00:14:43.320 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:43.321 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:43.416 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:43.417 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:43.627 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:43.628 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[3]/a[1]/span[2]"
-[ERROR] 2025-07-05 00:14:43.793 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:43.794 [main] ReportManager - Click " محكمة جديدة"
-[ERROR] 2025-07-05 00:14:44.919 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:44.919 [main] ReportManager - Type "اكتب اسم المحكمة"
-[ERROR] 2025-07-05 00:14:44.984 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:44.984 [main] ReportManager - Click "حفظ"
-[INFO ] 2025-07-05 00:14:45.451 [main] ReportManager - Get text "تم إضافة المحكمة بنجاح" from "By.xpath: //div[contains(text(),'تم إضافة المحكمة بنجاح')]".
-[ERROR] 2025-07-05 00:14:45.451 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:45.451 [main] AllureLifecycle - Could not stop step: step with uuid 153e355b-c3b2-4cb3-8453-39712ba7540f not found
-[ERROR] 2025-07-05 00:14:45.619 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:45.619 [main] ReportManager - Click ""
-[ERROR] 2025-07-05 00:14:45.681 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:45.682 [main] ReportManager - Click "نعم, قم بالحذف !"
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - Jul 05, 2025 12:14:45 AM org.openqa.selenium.remote.http.jdk.JdkHttpClient close
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - WARNING: failed to close the websocket: org.openqa.selenium.remote.http.jdk.JdkHttpClient$4@dc3eda6
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - org.openqa.selenium.WebDriverException: java.io.IOException: Output closed
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - Build info: version: '4.25.0', revision: '8a8aea2337'
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - Driver info: driver.version: SHAFT$GUI$WebDriver
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.send(JdkHttpClient.java:320)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient$4.close(JdkHttpClient.java:339)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.close(JdkHttpClient.java:478)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at org.openqa.selenium.bidi.Connection.close(Connection.java:267)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at org.openqa.selenium.bidi.BiDi.close(BiDi.java:41)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:426)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at com.shaft.driver.internal.DriverFactory.DriverFactoryHelper.closeDriver(DriverFactoryHelper.java:268)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at com.shaft.driver.internal.DriverFactory.DriverFactoryHelper.closeDriver(DriverFactoryHelper.java:250)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at com.shaft.driver.SHAFT$GUI$WebDriver.quit(SHAFT.java:58)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at pages.CommonPages.DriverManager.closeDriver(DriverManager.java:31)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at CucumberSteps.TestHooks.tearDown(TestHooks.java:59)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-[WARN ] 2025-07-05 00:14:45.937 [main] ReportManager - 	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:124)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1686)
-[WARN ] 2025-07-05 00:14:45.939 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:147)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:588)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:574)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at io.cucumber.core.cli.Main.run(Main.java:87)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at io.cucumber.core.cli.Main.main(Main.java:30)
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - Caused by: java.io.IOException: Output closed
-[WARN ] 2025-07-05 00:14:45.940 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.MessageEncoder.encodeClose(MessageEncoder.java:330)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask$1.onClose(TransportImpl.java:422)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask$1.onClose(TransportImpl.java:367)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.MessageQueue.peek(MessageQueue.java:266)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.TransportImpl$SendTask.run(TransportImpl.java:555)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.TransportImpl.sendClose(TransportImpl.java:271)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendClose0(WebSocketImpl.java:345)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl.sendCloseSilently(WebSocketImpl.java:660)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl$ReceiveTask.lambda$processClose$0(WebSocketImpl.java:549)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:907)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.base/java.util.concurrent.CompletableFuture.uniWhenCompleteStage(CompletableFuture.java:931)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.base/java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:2401)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.base/java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:144)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl$ReceiveTask.processClose(WebSocketImpl.java:544)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.websocket.WebSocketImpl$ReceiveTask.run(WebSocketImpl.java:459)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-[WARN ] 2025-07-05 00:14:45.941 [main] ReportManager - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-[WARN ] 2025-07-05 00:14:45.942 [main] ReportManager - 	at java.base/java.lang.Thread.run(Thread.java:1575)
-[INFO ] 2025-07-05 00:14:46.086 [main] ReportManager - Successfully Closed Driver.
-[ERROR] 2025-07-05 00:14:46.086 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:46.086 [main] AllureLifecycle - Could not stop step: step with uuid ad943736-435d-48b0-b6ac-eccc46b4134a not found
-[INFO ] 2025-07-05 00:14:46.092 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:46.092 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:46.094 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[INFO ] 2025-07-05 00:14:46.096 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
-[INFO ] 2025-07-05 00:14:46.099 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
-[INFO ] 2025-07-05 00:14:46.611 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
-[INFO ] 2025-07-05 00:14:46.612 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
-[INFO ] 2025-07-05 00:14:46.612 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
-[WARN ] 2025-07-05 00:14:49.505 [main] ReportManager - Jul 05, 2025 12:14:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-[WARN ] 2025-07-05 00:14:49.505 [main] ReportManager - WARNING: Unable to find CDP implementation matching 137
-[WARN ] 2025-07-05 00:14:49.505 [main] ReportManager - Jul 05, 2025 12:14:49 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-[WARN ] 2025-07-05 00:14:49.506 [main] ReportManager - WARNING: Unable to find version of CDP to use for 137.0.7151.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[INFO ] 2025-07-05 00:14:49.506 [main] ReportManager - Successfully Opened: "Windows | Chrome".
-[ERROR] 2025-07-05 00:14:49.506 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:49.506 [main] AllureLifecycle - Could not stop step: step with uuid 93483619-5eda-41cb-8af3-a765d326bbc0 not found
-[INFO ] 2025-07-05 00:14:49.576 [main] ReportManager - Target URL: "https://lawyer.algorithms.ws"
-[INFO ] 2025-07-05 00:14:49.601 [main] ReportManager - Initial URL: "about:blank"
-[INFO ] 2025-07-05 00:14:50.679 [main] ReportManager - Navigate to url "https://lawyer.algorithms.ws".
-[ERROR] 2025-07-05 00:14:50.679 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:50.679 [main] AllureLifecycle - Could not stop step: step with uuid 05f0403e-3592-4eab-ad80-bb8f2565de4d not found
-[INFO ] 2025-07-05 00:14:50.681 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:50.681 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:50.683 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[ERROR] 2025-07-05 00:14:51.666 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:51.667 [main] ReportManager - Type "البريد الإلكتروني"
-[ERROR] 2025-07-05 00:14:51.884 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:51.884 [main] ReportManager - Type "By.xpath: //input[@name='password']"
-[ERROR] 2025-07-05 00:14:52.012 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:52.013 [main] ReportManager - Click "تسجيل الدخول"
-[ERROR] 2025-07-05 00:14:53.748 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:53.749 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:53.863 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:53.863 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:14:54.053 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:54.053 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[3]/a[1]/span[2]"
-[ERROR] 2025-07-05 00:14:54.247 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:54.248 [main] ReportManager - Click " محكمة جديدة"
-[ERROR] 2025-07-05 00:14:55.371 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:55.372 [main] ReportManager - Type "اكتب اسم المحكمة"
-[ERROR] 2025-07-05 00:14:55.428 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:55.428 [main] ReportManager - Click "حفظ"
-[ERROR] 2025-07-05 00:14:56.072 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:56.072 [main] ReportManager - Click ""
-[INFO ] 2025-07-05 00:14:56.148 [main] ReportManager - Clear "اكتب اسم المحكمة".
-[ERROR] 2025-07-05 00:14:56.148 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:56.148 [main] AllureLifecycle - Could not stop step: step with uuid 08606339-37fd-4053-be13-7f628a44b612 not found
-[ERROR] 2025-07-05 00:14:58.286 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:58.286 [main] ReportManager - Type "اكتب اسم المحكمة"
-[ERROR] 2025-07-05 00:14:58.354 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:58.354 [main] ReportManager - Click "حفظ"
-[INFO ] 2025-07-05 00:14:59.028 [main] ReportManager - Get text "تم تعديل المحكمة بنجاح" from "By.xpath: //div[contains(text(),'تم تعديل المحكمة بنجاح')]".
-[ERROR] 2025-07-05 00:14:59.028 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:59.028 [main] AllureLifecycle - Could not stop step: step with uuid e139f5cc-3ac6-4e02-931a-ac257e37fe74 not found
-[ERROR] 2025-07-05 00:14:59.095 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:59.096 [main] ReportManager - Click ""
-[ERROR] 2025-07-05 00:14:59.176 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:14:59.176 [main] ReportManager - Click "نعم, قم بالحذف !"
-[INFO ] 2025-07-05 00:14:59.568 [main] ReportManager - Successfully Closed Driver.
-[ERROR] 2025-07-05 00:14:59.568 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:14:59.568 [main] AllureLifecycle - Could not stop step: step with uuid b1b7fc64-148e-4cef-9971-adba46387425 not found
-[INFO ] 2025-07-05 00:14:59.573 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:14:59.573 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:14:59.574 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[INFO ] 2025-07-05 00:14:59.576 [main] ReportManager - Setting "targetOperatingSystem" property with "windows".
-[INFO ] 2025-07-05 00:14:59.578 [main] ReportManager - Setting "screenshotParams_scalingFactor" property with "1.5".
-[INFO ] 2025-07-05 00:15:00.097 [main] ReportManager - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--disable-search-engine-cho..., --remote-allow-origins=*, --enable-automation, --disable-background-timer-..., --disable-backgrounding-occ..., --disable-features=Optimiza..., --disable-hang-monitor, --disable-domain-reliability, --disable-renderer-backgrou..., --metrics-recording-only, --no-first-run, --no-default-browser-check, --silent-debugger-extension..., --disable-extensions, --disable-component-extensi..., --disable-dev-shm-usage, --disable-ipc-flooding-prot..., --disable-background-networ..., --mute-audio, --disable-breakpad, --ignore-certificate-errors, --disable-device-discovery-..., --force-color-profile=srgb, --hide-scrollbars, --host-resolver-rules, --no-pings, --disable-sync, --disable-field-trial-config, --enable-features=NetworkSe..., --enable-features=NetworkSe..., --enable-use-zoom-for-dsf, --log-net-log, --net-log-capture-mode, --disable-client-side-phish..., --disable-default-apps, --remote-debugging-pipe, --no-sandbox, --start-maximized], extensions: [], prefs: {download.default_directory: C:\Users\mostafa.hossam\Dow..., download.prompt_for_download: false, profile.default_content_settings.popups: 0}}, pageLoadStrategy: normal, timeouts: {pageLoad: 60000, script: 60000}, unhandledPromptBehavior: ignore, webSocketUrl: true}
-[INFO ] 2025-07-05 00:15:00.098 [main] ReportManager - Attempting to run locally on: "Windows | Chrome".
-[INFO ] 2025-07-05 00:15:00.098 [main] ReportManager - Identifying OS/Driver combination. Please note that if a new browser/driver executable will be downloaded it may take some time depending on your connection...
-[WARN ] 2025-07-05 00:15:02.418 [main] ReportManager - Jul 05, 2025 12:15:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-[WARN ] 2025-07-05 00:15:02.419 [main] ReportManager - WARNING: Unable to find CDP implementation matching 137
-[WARN ] 2025-07-05 00:15:02.419 [main] ReportManager - Jul 05, 2025 12:15:02 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-[WARN ] 2025-07-05 00:15:02.419 [main] ReportManager - WARNING: Unable to find version of CDP to use for 137.0.7151.55. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[INFO ] 2025-07-05 00:15:02.420 [main] ReportManager - Successfully Opened: "Windows | Chrome".
-[ERROR] 2025-07-05 00:15:02.420 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:15:02.420 [main] AllureLifecycle - Could not stop step: step with uuid da814f69-1e96-4bd9-bd55-10e1fbf6958e not found
-[INFO ] 2025-07-05 00:15:02.483 [main] ReportManager - Target URL: "https://lawyer.algorithms.ws"
-[INFO ] 2025-07-05 00:15:02.508 [main] ReportManager - Initial URL: "about:blank"
-[INFO ] 2025-07-05 00:15:03.705 [main] ReportManager - Navigate to url "https://lawyer.algorithms.ws".
-[ERROR] 2025-07-05 00:15:03.705 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:15:03.705 [main] AllureLifecycle - Could not stop step: step with uuid 44839ea8-6cfa-426e-a767-c80fbbf63bcd not found
-[INFO ] 2025-07-05 00:15:03.706 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
-[ERROR] 2025-07-05 00:15:03.707 [main] AllureLifecycle - Could not add attachment: no test is running
-[INFO ] 2025-07-05 00:15:03.709 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
-[ERROR] 2025-07-05 00:15:04.612 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:04.613 [main] ReportManager - Type "البريد الإلكتروني"
-[ERROR] 2025-07-05 00:15:04.801 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:04.802 [main] ReportManager - Type "By.xpath: //input[@name='password']"
-[ERROR] 2025-07-05 00:15:04.915 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:04.916 [main] ReportManager - Click "تسجيل الدخول"
-[ERROR] 2025-07-05 00:15:06.778 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:06.778 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:15:06.883 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:06.884 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/span[1]/span[2]"
-[ERROR] 2025-07-05 00:15:07.120 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:07.120 [main] ReportManager - Click "By.xpath: /html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[3]/a[1]/span[2]"
-[ERROR] 2025-07-05 00:15:07.272 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:07.273 [main] ReportManager - Click " محكمة جديدة"
-[ERROR] 2025-07-05 00:15:08.387 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:08.387 [main] ReportManager - Type "اكتب اسم المحكمة"
-[ERROR] 2025-07-05 00:15:08.457 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:08.457 [main] ReportManager - Click "حفظ"
-[INFO ] 2025-07-05 00:15:09.040 [main] ReportManager - Get text "تم إضافة المحكمة بنجاح" from "By.xpath: //div[contains(text(),'تم إضافة المحكمة بنجاح')]".
-[ERROR] 2025-07-05 00:15:09.040 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:15:09.040 [main] AllureLifecycle - Could not stop step: step with uuid 1447e7a7-83ec-400f-9952-1fce17cb4595 not found
-[ERROR] 2025-07-05 00:15:09.208 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:09.208 [main] ReportManager - Click ""
-[ERROR] 2025-07-05 00:15:09.267 [main] AllureLifecycle - Could not update step: no step running
-[INFO ] 2025-07-05 00:15:09.268 [main] ReportManager - Click "نعم, قم بالحذف !"
-[INFO ] 2025-07-05 00:15:09.809 [main] ReportManager - Get text "تم حذف المحكمة بنجاح" from "By.xpath: //div[contains(text(),'تم حذف المحكمة بنجاح')]".
-[ERROR] 2025-07-05 00:15:09.810 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:15:09.810 [main] AllureLifecycle - Could not stop step: step with uuid 02ba47a5-a82d-410f-b181-62f3247526b7 not found
-[INFO ] 2025-07-05 00:15:10.212 [main] ReportManager - Successfully Closed Driver.
-[ERROR] 2025-07-05 00:15:10.214 [main] AllureLifecycle - Could not start step: no test case running
-[ERROR] 2025-07-05 00:15:10.214 [main] AllureLifecycle - Could not stop step: step with uuid 8b36fbd2-2013-47b2-a604-ebf83185789e not found
+[INFO ] 2025-08-30 17:20:17.450 [main] ReportManager - Target URL: "https://lawyer.legiodomain.top/login"
+[INFO ] 2025-08-30 17:20:17.482 [main] ReportManager - Initial URL: "about:blank"
+[INFO ] 2025-08-30 17:20:18.596 [main] ReportManager - Navigate to url "https://lawyer.legiodomain.top/login".
+[ERROR] 2025-08-30 17:20:18.597 [main] AllureLifecycle - Could not start step: no test case running
+[ERROR] 2025-08-30 17:20:18.597 [main] AllureLifecycle - Could not stop step: step with uuid 2840fa31-ace2-4675-b4cf-d41676f627d7 not found
+[INFO ] 2025-08-30 17:20:18.610 [main] ReportManager - Loaded Test Data: "src/test/resources/testDataFiles/simpleJSON.json".
+[ERROR] 2025-08-30 17:20:18.611 [main] AllureLifecycle - Could not add attachment: no test is running
+[INFO ] 2025-08-30 17:20:18.614 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
+[ERROR] 2025-08-30 17:20:19.416 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:19.418 [main] ReportManager - Type "* البريد الإلكتروني"
+[ERROR] 2025-08-30 17:20:19.677 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:19.678 [main] ReportManager - Type "* كلمة المرور"
+[ERROR] 2025-08-30 17:20:19.831 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:19.832 [main] ReportManager - Click "دخول"
+[ERROR] 2025-08-30 17:20:22.718 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:22.718 [main] ReportManager - Click "الدعم الفني"
+[ERROR] 2025-08-30 17:20:23.983 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:23.983 [main] ReportManager - Click "By.xpath: //span[contains(text(),'إنشاء محادثة جديدة')]"
+[ERROR] 2025-08-30 17:20:24.453 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:24.454 [main] ReportManager - Type "* المحتوى"
+[ERROR] 2025-08-30 17:20:24.750 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:24.750 [main] ReportManager - Type "* الوصف"
+[ERROR] 2025-08-30 17:20:24.851 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:24.851 [main] ReportManager - Click "إنشاء"
+[ERROR] 2025-08-30 17:20:26.431 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:26.431 [main] ReportManager - Type "اكتب رسالتك..."
+[ERROR] 2025-08-30 17:20:26.494 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:26.495 [main] ReportManager - Click "send"
+[ERROR] 2025-08-30 17:20:26.579 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:26.581 [main] ReportManager - Click "By.xpath: //span[contains(text(),'العودة إلى المحادثات')]"
+[ERROR] 2025-08-30 17:20:26.695 [main] AllureLifecycle - Could not update step: no step running
+[INFO ] 2025-08-30 17:20:26.696 [main] ReportManager - Click "By.xpath: (//span[contains(text(),'عرض المحادثة')])[1]"
+[INFO ] 2025-08-30 17:20:27.191 [main] ReportManager - Successfully Closed Driver.
+[ERROR] 2025-08-30 17:20:27.192 [main] AllureLifecycle - Could not start step: no test case running
+[ERROR] 2025-08-30 17:20:27.192 [main] AllureLifecycle - Could not stop step: step with uuid 083c6b28-f5f4-41f5-8c4b-07272ed96a33 not found

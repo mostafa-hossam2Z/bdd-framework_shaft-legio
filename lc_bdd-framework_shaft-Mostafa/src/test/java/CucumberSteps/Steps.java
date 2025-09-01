@@ -4,6 +4,7 @@ import com.shaft.driver.SHAFT;
 
 import io.cucumber.java.en.Given;
 
+import io.cucumber.java.en.When;
 import pages.CommonPages.Homepage;
 import pages.Login.loginpage;
 
@@ -27,6 +28,7 @@ public class Steps extends base {
             String Password=testData.getTestData(password);
             loginpageobj.login(Email,Password);
       }
+
 //    @Given("User Fill {string} And {string}")
 //    public void UserFillEmailAndPasswordastrainee(String email1,String password1)
 //    {
